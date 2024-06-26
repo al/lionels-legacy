@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky inset-x-0 top-0 z-50 bg-orange-600 opacity-90 shadow">
+  <nav class="sticky inset-x-0 top-0 z-50 bg-orange-600/85 shadow backdrop-blur-sm">
     <div
       class="flex items-center justify-between p-6 lg:px-8"
       id="global-nav"
@@ -77,15 +77,22 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
   { name: 'Home', href: { name: 'homePage' } },
-  { name: 'Poster', href: { name: 'posterMaker' } },
-  { name: 'The Law', href: { name: 'homePage', hash: '#the-law' } },
-  { name: 'What to do', href: { name: 'homePage', hash: '#what-to-do' } },
-  { name: 'Speed Matters', href: { name: 'homePage', hash: '#speed-matters' } },
-  { name: "Lionel's Story", href: { name: 'homePage', hash: '#lionels-story' } },
-  { name: 'Get involved', href: { name: 'homePage', hash: '#get-involved' } },
-  { name: 'Resources', href: { name: 'homePage', hash: '#resources' } },
-  { name: 'Stay in touch', href: { name: 'homePage', hash: '#stay-in-touch' } },
+  { name: 'Home 2', href: { name: 'homePage2' } },
+  { name: 'Home 1', href: { name: 'homePage1' } },
 ]
+
+// const navigation = [
+//   { name: 'Home', href: { name: 'homePage' } },
+//   { name: 'Old', href: { name: 'homePage1' } },
+//   { name: 'Poster', href: { name: 'posterMaker' } },
+//   { name: 'The Law', href: { name: 'homePage', hash: '#the-law' } },
+//   { name: 'What to do', href: { name: 'homePage', hash: '#what-to-do' } },
+//   { name: 'Speed Matters', href: { name: 'homePage', hash: '#speed-matters' } },
+//   { name: "Lionel's Story", href: { name: 'homePage', hash: '#lionels-story' } },
+//   { name: 'Get involved', href: { name: 'homePage', hash: '#get-involved' } },
+//   { name: 'Resources', href: { name: 'homePage', hash: '#resources' } },
+//   { name: 'Stay in touch', href: { name: 'homePage', hash: '#stay-in-touch' } },
+// ]
 
 const mobileMenuOpen = ref(false)
 </script>

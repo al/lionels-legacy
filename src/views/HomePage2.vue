@@ -1,8 +1,8 @@
 <template>
   <HeroHeader />
+  <LionelsStory />
   <TheLaw />
   <WhatToDo />
-  <LionelsStory />
   <GetInvolved />
 </template>
 

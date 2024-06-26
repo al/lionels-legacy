@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import PageLayout from '../components/Layout/PageLayout.vue'
 import HomePage from '../views/HomePage.vue'
+import HomePage1 from '../views/HomePage1.vue'
+import HomePage2 from '../views/HomePage2.vue'
 import PosterMaker from '../views/PosterMaker.vue'
 
 const routes = [
@@ -11,6 +13,20 @@ const routes = [
         component: HomePage,
         name: 'homePage',
         path: '/',
+      },
+      // FIXME: Remove.
+      //
+      {
+        component: HomePage1,
+        name: 'homePage1',
+        path: '/home1',
+      },
+      // FIXME: Remove.
+      //
+      {
+        component: HomePage2,
+        name: 'homePage2',
+        path: '/home2',
       },
       {
         component: PosterMaker,

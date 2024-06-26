@@ -1,48 +1,53 @@
 <template>
   <div
-    class="mx-auto px-4 pt-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:pt-20"
+    class="sm:text-center mx-auto px-4 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-5xl lg:px-8 mb-4"
   >
     <h2
-      class="my-20 mt-12 max-w-full scroll-mt-[80px] font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
+      class="my-6 mt-12 max-w-full scroll-mt-[80px] font-sans text-3xl font-bold leading-none tracking-tight text-gray-800 sm:text-4xl md:mx-auto"
       id="what-to-do"
     >
-      If you are involved in or witness an accident involving a cat you must act
+      If a vehicle you are driving hits a cat you must act
     </h2>
 
-    <p class="my-20 text-base text-gray-700 md:text-lg">
+    <p class="my-6 text-base text-gray-700 md:text-lg">
       Failure to do so is punishable by a fine of
-      <strong class="text-red-accent-700">up to £10k</strong> or up to
-      <strong class="text-red-accent-700">6 month's imprisonment</strong>
+      <strong class="text-orange-accent-400">up to £10k</strong> or up to
+      <strong class="text-orange-accent-400">6 month's imprisonment</strong>
     </p>
   </div>
 
-  <div class="row-gap-10 mx-auto my-20 grid max-w-screen-lg gap-8 md:grid-cols-3">
+  <h2
+    class="text-center my-6 max-w-full flex-1 font-sans text-3xl font-semibold md:tracking-wider text-gray-500 md:mx-auto md:flex-none md:leading-relaxed"
+  >
+    Do the right thing&hellip;
+  </h2>
+  <div class="row-gap-10 mx-auto my-6 grid max-w-screen-lg gap-8 md:grid-cols-3 md:px-24">
     <div class="flex max-w-md sm:flex-row">
       <div class="mr-4">
-        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-50">
+        <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-indigo-50">
           <svg
-            class="h-6 w-6 text-orange-accent-400"
+            class="h-12 w-12 text-orange-accent-400"
             fill="currentColor"
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
             <path
-              d="M367.2 412.5L99.5 144.8C77.1 176.1 64 214.5 64 256c0 106 86 192 192 192c41.5 0 79.9-13.1 111.2-35.5zm45.3-45.3C434.9 335.9 448 297.5 448 256c0-106-86-192-192-192c-41.5 0-79.9 13.1-111.2 35.5L412.5 367.2zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"
+              d="M352.7 21.04l-194.4.41L21.04 159.3l.41 194.4L159.3 491l194.4-.4L491 352.7l-.4-194.4L352.7 21.04zm-8 19.66l126.2 125.7.4 178.3-123.1 123.6-2.6 2.6-178.3.4L41.08 345.6l-.38-178.3L166.4 41.08l178.3-.38zm-7.5 18.01l-163.3.34L58.71 174.8l.34 163.3L174.8 453.3l163.3-.3 115.2-115.8-.3-163.3L337.2 58.71zM108.4 210.4c5.3 0 10.8.5 16.4 1.3 5.7.8 11.5 2 17.5 3.6v20.5c-5.3-2.4-10.5-4.2-15.6-5.4-5.1-1.2-9.9-1.8-14.4-1.8-6 0-10.4.8-13.25 2.5-2.87 1.6-4.3 4.2-4.3 7.7 0 2.6.96 4.6 2.87 6.1 1.95 1.4 5.48 2.7 10.58 3.7l10.6 2.1c10.8 2.2 18.5 5.5 23.1 9.9 4.5 4.5 6.8 10.8 6.8 18.9 0 10.7-3.2 18.7-9.5 24-6.4 5.2-16.1 7.8-29.2 7.8-6.1 0-12.3-.6-18.51-1.8-6.2-1.1-12.41-2.9-18.61-5.2v-21.1c6.2 3.3 12.19 5.8 17.96 7.5 5.82 1.6 11.46 2.4 16.76 2.4 5.5 0 9.7-.9 12.6-2.7 2.9-1.8 4.4-4.4 4.4-7.8 0-3.1-1-5.4-3-7.1-2-1.6-5.9-3.1-11.8-4.4l-9.7-2.1c-9.73-2.1-16.85-5.4-21.37-10-4.47-4.5-6.7-10.7-6.7-18.4 0-9.7 3.12-17.1 9.37-22.3 6.25-5.3 15.24-7.9 27-7.9zm187.7 0c15.6 0 27.8 4.5 36.7 13.5 8.9 8.9 13.3 21.2 13.3 37 0 15.7-4.4 28-13.3 37-8.9 8.9-21.1 13.4-36.7 13.4-15.6 0-27.8-4.5-36.7-13.4-8.9-9-13.3-21.3-13.3-37 0-15.8 4.4-28.1 13.3-37 8.9-9 21.1-13.5 36.7-13.5zm-141.9 1.8h89.6v18.9h-32.2v78.3h-25.1v-78.3h-32.3v-18.9zm205.8 0h41.6c12.3 0 21.8 2.8 28.4 8.3 6.7 5.4 10 13.2 10 23.4s-3.3 18.1-10 23.6c-6.6 5.4-16.1 8.2-28.4 8.2H385v33.7h-25v-97.2zm-63.9 16.4c-7.7 0-13.6 2.8-17.8 8.5-4.2 5.6-6.3 13.6-6.3 23.8 0 10.2 2.1 18.1 6.3 23.8 4.2 5.6 10.1 8.4 17.8 8.4 7.7 0 13.6-2.8 17.8-8.4 4.2-5.7 6.3-13.6 6.3-23.8 0-10.2-2.1-18.2-6.3-23.8-4.2-5.7-10.1-8.5-17.8-8.5zm88.9 1.8v27.1h13.9c4.9 0 8.6-1.2 11.3-3.5 2.6-2.4 3.9-5.8 3.9-10.1s-1.3-7.7-3.9-10c-2.7-2.4-6.4-3.5-11.3-3.5H385z"
             />
           </svg>
         </div>
       </div>
       <div>
         <h6 class="mb-3 text-xl font-bold leading-5">Stop</h6>
-        <p class="mb-3 text-sm text-gray-900">Stop your vehicle as soon as it is safe to do so</p>
+        <p class="mb-3 text-sm text-gray-800">Stop your vehicle as soon as it is safe to do so</p>
       </div>
     </div>
     <div class="flex max-w-md sm:flex-row">
       <div class="mr-4">
-        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-50">
+        <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-indigo-50">
           <svg
-            class="h-6 w-6 text-orange-accent-400"
+            class="h-12 w-12 text-orange-accent-400"
             fill="currentColor"
             viewBox="0 0 512 512"
             xmlns="http://www.w3.org/2000/svg"
@@ -56,14 +61,14 @@
       </div>
       <div>
         <h6 class="mb-3 text-xl font-bold leading-5">Check</h6>
-        <p class="mb-3 text-sm text-gray-900">Check the animal for signs of injuries</p>
+        <p class="mb-3 text-sm text-gray-800">Check the animal for signs of injuries</p>
       </div>
     </div>
     <div class="flex max-w-md sm:flex-row">
       <div class="mr-4">
-        <div class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-indigo-50">
+        <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-indigo-50">
           <svg
-            class="h-6 w-6 text-orange-accent-400"
+            class="h-10 w-10 text-orange-accent-400"
             fill="currentColor"
             viewBox="0 0 512 512"
           >
@@ -76,7 +81,7 @@
       </div>
       <div>
         <h6 class="mb-3 text-xl font-bold leading-5">Report</h6>
-        <p class="mb-3 text-sm text-gray-900">
+        <p class="mb-3 text-sm text-gray-800">
           Report the incident to the owner or call the
           <a
             class="inline-flex items-center font-semibold text-orange-accent-400 transition-colors duration-200 hover:text-orange-900"
@@ -105,67 +110,8 @@
       </div>
     </div>
   </div>
-
-  <div class="vvv">
-    <div
-      class="mx-auto px-4 py-16 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-screen-xl lg:px-8 lg:py-20"
-    >
-      <div class="max-w-xl sm:text-center md:mx-auto md:text-left lg:max-w-2xl">
-        <div class="flex flex-col md:flex-row">
-          <h2
-            class="word-break mb-6 max-w-full flex-1 font-sans text-3xl font-bold tracking-tight text-gray-500 sm:text-4xl md:mx-auto md:w-1/4 md:flex-none md:leading-relaxed"
-          >
-            Do the right thing
-          </h2>
-          <ul class="flex-1 list-disc text-left md:w-3/4">
-            <li class="mb-6 text-base text-gray-700 md:text-lg">
-              Remember that for many pets are like family members. If an injured cat receives help
-              early, it is possible that their life could be saved.
-            </li>
-
-            <li class="mb-6 text-base text-gray-700 md:text-lg">
-              For your own wellbeing it is better to report the incident yourself rather than
-              disregard the law and risk having your actions reported to the
-              <a
-                class="inline-flex items-center font-semibold text-orange-accent-400 transition-colors duration-200 hover:text-orange-900"
-                aria-label=""
-                href="https://jersey.police.uk/"
-                >States of Jersey Police</a
-              >
-              or
-              <a
-                class="inline-flex items-center font-semibold text-orange-accent-400 transition-colors duration-200 hover:text-orange-900"
-                aria-label=""
-                href="https://jspca.org.je/"
-                >JSPCA</a
-              >
-              by witnesses.
-            </li>
-            <li class="text-base text-gray-700 md:text-lg">
-              Remember that many properties now have road facing private cameras. Unfortunately for
-              Lionel on 4 June 2024, the day he was killed, the camera that would have caught the
-              incident was offline. The driver did not report hitting and killing Lionel with their
-              vehicle and left the scene, thereby breaking the law. Had the camera been on that day,
-              the driver would have been recorded and their actions would be undeniable.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script setup></script>
 
-<style scoped>
-@media screen(md) {
-  .word-break {
-    word-spacing: 9999999px;
-  }
-}
-
-.vvv {
-  background-color: #f8fafc;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d4e0eb' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-</style>
+<style scoped></style>

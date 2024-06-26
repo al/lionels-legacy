@@ -37,7 +37,7 @@
   "name": "lionels-legacy",
   "private": true,
   "scripts": {
-    "build": "vite build && pnpm exec generate-sitemap.js",
+    "build": "vite build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "format": "prettier --write src/",

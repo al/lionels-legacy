@@ -1,22 +1,22 @@
 <template>
-  <div class="relative px-4 md:px-24 lg:px-8 my-6">
+  <div class="relative px-4 md:px-24 lg:px-8 lg:pt-10">
     <img
       class="absolute bottom-0 right-0 w-1/2 opacity-5"
       alt=""
       src="@/assets/images/paws.svg"
     />
 
-    <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
+    <div class="mb-10 max-w-xl text-left md:mx-auto md:mb-12 md:text-left lg:max-w-6xl">
       <h2
-        class="my-6 max-w-full scroll-mt-[80px] md:text-center font-sans text-3xl font-bold leading-none tracking-tight text-gray-800 sm:text-4xl md:mx-auto"
+        class="my-6 max-w-full scroll-mt-[80px] text-center font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
         id="lionels-story"
       >
         Lionel&rsquo;s Story
       </h2>
 
-      <div class="flex flex-col lg:flex-row overflow-x-hidden sm:overflow-x-visible">
+      <div class="flex flex-col lg:flex-row">
         <div
-          class="-ml-10 sm:ml-0 lg:min-w-[580px] relative mb-10 mt-6 min-h-[550px] max-w-xl flex-1 md:mx-auto md:mb-12 lg:w-1/2 lg:max-w-2xl w-full md:overflow-visible"
+          class="relative mb-10 mt-6 min-h-[550px] max-w-xl flex-1 px-10 md:mb-12 lg:w-1/2 lg:max-w-2xl"
         >
           <div class="absolute left-8 top-3 w-64 rotate-12">
             <PolaroidImage
@@ -41,7 +41,7 @@
             />
           </div>
         </div>
-        <div class="z-10 mb-10 max-w-xl flex-1 xpx-10 md:mx-auto md:mb-12 lg:w-1/2 lg:max-w-2xl">
+        <div class="z-50 mb-10 max-w-xl flex-1 px-10 md:mx-auto md:mb-12 lg:w-1/2 lg:max-w-2xl">
           <p class="mb-6 text-base text-gray-700 md:text-lg">
             Lionel was a beautiful young cat loving his new life with his humans and three cat
             brothers in Grantez, St. Ouen until June 4<sup>th</sup> 2024 when he was the victim of a

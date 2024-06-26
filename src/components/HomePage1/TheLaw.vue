@@ -4,7 +4,7 @@
   >
     <div class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl">
       <h2
-        class="mb-6 max-w-full scroll-mt-[80px] font-sans text-3xl font-bold leading-none tracking-tight text-gray-800 sm:text-4xl md:mx-auto"
+        class="mb-6 max-w-full scroll-mt-[80px] font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
         id="the-law"
       >
         <span class="relative inline-block">
@@ -39,11 +39,11 @@
         road traffic law has changed
       </h2>
       <p class="mb-6 text-base text-gray-700 md:text-lg">
-        As a motorist you now have explicit duties if your car hits a cat.
+        Motorists now have explicit duties in respect of incidents involving cats.
       </p>
       <div>
         <p
-          class="mb-4 mt-6 inline-flex items-center rounded-full bg-indigo-50 px-3 py-px text-xs font-semibold uppercase tracking-wider text-gray-800 transition-colors duration-200 hover:text-orange-900"
+          class="mb-6 mt-20 inline-flex items-center rounded-full bg-indigo-50 px-3 py-px text-xs font-semibold uppercase tracking-wider text-gray-900 transition-colors duration-200 hover:text-orange-900"
         >
           <a
             aria-label="Open Road Traffic (Jersey) Law 1956 in new window"
@@ -53,7 +53,7 @@
           </a>
         </p>
       </div>
-      <figure class="border-1 md:text-l mb-6 border-y px-10 py-3 text-left text-gray-800">
+      <figure class="border-1 md:text-l mb-20 border-y px-10 py-3 text-left text-gray-800">
         <blockquote class="leading-loose">
           <ol
             class="list-decimal font-serif"
