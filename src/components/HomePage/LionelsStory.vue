@@ -1,11 +1,15 @@
 <template>
   <div class="relative px-4 md:px-24 lg:px-8 lg:pt-10">
-    <img src="@/assets/images/paws.svg" class="absolute bottom-0 right-0 w-1/2 opacity-5" alt="" />
+    <img
+      class="absolute bottom-0 right-0 w-1/2 opacity-5"
+      alt=""
+      src="@/assets/images/paws.svg"
+    />
 
     <div class="mb-10 max-w-xl text-left md:mx-auto md:mb-12 md:text-left lg:max-w-6xl">
       <h2
-        id="lionels-story"
         class="my-6 max-w-full scroll-mt-[80px] text-center font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
+        id="lionels-story"
       >
         Lionel&rsquo;s Story
       </h2>
@@ -15,20 +19,23 @@
           class="relative mb-10 mt-6 min-h-[550px] max-w-xl flex-1 px-10 md:mb-12 lg:w-1/2 lg:max-w-2xl"
         >
           <div class="absolute left-8 top-3 w-64 rotate-12">
-            <Polaroid src="assets/images/lionel-3.jpg" alt="Picture of Lionel" />
+            <PolaroidImage
+              alt="Picture of Lionel"
+              src="assets/images/lionel-3.jpg"
+            />
           </div>
           <div class="absolute left-[8rem] top-[14rem] w-64 -rotate-3">
-            <Polaroid
-              src="assets/images/lionel-4.jpg"
+            <PolaroidImage
               alt="Picture of Lionel"
+              src="assets/images/lionel-4.jpg"
               text="May 2024"
               textClass="ml-[15%] rotate-2"
             />
           </div>
           <div class="absolute left-[16rem] top-10 w-64 rotate-[-22deg]">
-            <Polaroid
-              src="assets/images/lionel-2.jpg"
+            <PolaroidImage
               alt="Picture of Lionel and Monty"
+              src="assets/images/lionel-2.jpg"
               text="Lionel with Monty"
               textClass="-rotate-3"
             />
@@ -63,12 +70,12 @@
 </template>
 
 <script>
-import Polaroid from './Polaroid.vue'
+import PolaroidImage from '../PolaroidImage.vue'
 
 export default {
   components: {
-    Polaroid
-  }
+    PolaroidImage,
+  },
 }
 </script>
 

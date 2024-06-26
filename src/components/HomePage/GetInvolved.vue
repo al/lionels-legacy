@@ -4,8 +4,8 @@
       <div class="flex flex-col lg:flex-row">
         <div class="mb-10 max-w-xl flex-1 px-10 md:mx-auto md:mb-12 lg:w-1/2 lg:max-w-2xl">
           <h2
-            id="get-involved"
             class="my-6 max-w-full scroll-mt-[80px] text-left font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto md:text-center"
+            id="get-involved"
           >
             Get Involved
           </h2>

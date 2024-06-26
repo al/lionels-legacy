@@ -1,9 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/prettierrc",
-  "plugins": ["prettier-plugin-tailwindcss"],
+  "attributeSort": "ASC",
+  "plugins": ["prettier-plugin-tailwindcss", "prettier-plugin-organize-attributes"],
   "printWidth": 100,
   "semi": false,
+  "singleAttributePerLine": true,
   "singleQuote": true,
   "tabWidth": 2,
-  "trailingComma": "none"
+  "trailingComma": "all"
 }

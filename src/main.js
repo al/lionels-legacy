@@ -1,9 +1,13 @@
 import { createApp } from 'vue'
-import PDFObjectPlugin from 'pdfobject-vue'
-import App from './App.vue'
+import { createHead } from '@unhead/vue'
+import { InferSeoMetaPlugin } from '@unhead/addons'
+import router from './router'
 
+import App from './App.vue'
 import '/src/assets/stylesheets/index.css'
 
-const app = createApp(App)
-app.use(PDFObjectPlugin)
-app.mount('#app')
+const head = createHead({
+  plugins: [InferSeoMetaPlugin()],
+})
+
+createApp(App).use(router).use(head).mount('#app')
