@@ -1,5 +1,9 @@
 {
   "dependencies": {
+    "@vueuse/core": "^10.11.0",
+    "jspdf": "^2.5.1",
+    "pdfobject": "^2.3.0",
+    "pdfobject-vue": "^0.0.4",
     "vue": "^3.4.21"
   },
   "devDependencies": {
