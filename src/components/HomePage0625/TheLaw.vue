@@ -4,7 +4,7 @@
   >
     <div class="mb-10 max-w-xl sm:text-center md:mx-auto md:mb-12 lg:max-w-2xl">
       <h2
-        class="mb-6 max-w-full scroll-mt-[80px] font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
+        class="mb-6 max-w-full scroll-mt-[80px] text-3xl font-bold leading-none tracking-tight text-gray-800 sm:text-4xl md:mx-auto"
         id="the-law"
       >
         <span class="relative inline-block">
@@ -38,23 +38,32 @@
         </span>
         road traffic law has changed
       </h2>
-      <p class="mb-6 text-base text-gray-700 md:text-lg">
-        Motorists now have explicit duties in respect of incidents involving cats.
+      <p class="mb-12 text-base text-gray-700 md:text-lg">
+        As a motorist you now have explicit duties if your car hits a cat.
       </p>
-      <div>
-        <p
-          class="mb-6 mt-20 inline-flex items-center rounded-full bg-indigo-50 px-3 py-px text-xs font-semibold uppercase tracking-wider text-gray-900 transition-colors duration-200 hover:text-orange-900"
+
+      <p class="mb-12 text-base text-gray-700 md:text-lg">
+        Under the updated regulations, the driver of a motor vehicle on a public road who thinks he
+        or she has hit or run over a cat must do two things:
+      </p>
+      <ol
+        class="marker:text-orange-accent-400 mb-12 px-10 text-base text-gray-700 md:text-lg list-decimal"
+      >
+        <li class="mb-2">
+          The driver must stop &ldquo;as soon as it is safe and reasonably practicable to do
+          so&rdquo;; and
+        </li>
+        <li>
+          The driver must notify either a person who is responsible for caring for the cat or the
+          JSPCA.
+        </li>
+      </ol>
+
+      <figure class="md:text-l mb-12 px-10 text-left text-gray-800">
+        <blockquote
+          class="leading-loose border-1 py-3 border-y"
+          cite="https://www.jerseylaw.je/laws/current/Pages/25.550.aspx#_Toc151627514"
         >
-          <a
-            aria-label="Open Road Traffic (Jersey) Law 1956 in new window"
-            href="https://www.jerseylaw.je/laws/current/Pages/25.550.aspx#_Toc151627514"
-            target="_blank"
-            >Road Traffic (Jersey) Law 1956
-          </a>
-        </p>
-      </div>
-      <figure class="border-1 md:text-l mb-20 border-y px-10 py-3 text-left text-gray-800">
-        <blockquote class="leading-loose">
           <ol
             class="list-decimal font-serif"
             start="52"
@@ -90,9 +99,21 @@
             </li>
           </ol>
         </blockquote>
+        <cite class="block text-right pt-3"
+          >Article 52(4) of the
+          <a
+            class="text-orange-accent-400 transition-colors duration-200 hover:text-orange-900"
+            aria-label=""
+            href="https://www.jerseylaw.je/laws/current/Pages/25.550.aspx#_Toc151627514"
+            target="_blank"
+            >Road Traffic (Jersey) Law 1956
+            <ArrowTopRightOnSquareIcon class="w-3 inline-block pb-2" /> </a
+        ></cite>
       </figure>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/20/solid'
+</script>

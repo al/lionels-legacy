@@ -11,12 +11,16 @@
           </h2>
 
           <p class="mb-6 text-base text-gray-700 md:text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
+            We appealed for information on Lionel&rsquo;s last moments. We created posters to place
+            at the site and leaflets to hand out to passersby.
+          </p>
+          <p class="my-6 text-base text-gray-700 md:text-lg">
+            The aim was also to help spread the word that failure to report collisions with cats is
+            now a motor traffic offence.
+          </p>
+          <p class="my-6 text-base text-gray-700 md:text-lg">
+            Please feel free to use the templates attached should you need to, whilst also helping
+            to get the message out there.
           </p>
         </div>
         <div class="mb-6 max-w-full flex-1 lg:mx-auto lg:w-1/2"></div>

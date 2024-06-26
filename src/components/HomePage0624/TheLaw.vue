@@ -54,7 +54,10 @@
         </p>
       </div>
       <figure class="border-1 md:text-l mb-6 border-y px-10 py-3 text-left text-gray-800">
-        <blockquote class="leading-loose">
+        <blockquote
+          class="leading-loose"
+          cite="https://www.jerseylaw.je/laws/current/Pages/25.550.aspx#_Toc151627514"
+        >
           <ol
             class="list-decimal font-serif"
             start="52"
