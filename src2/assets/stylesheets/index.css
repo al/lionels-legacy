@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply hover:underline hover:decoration-dashed hover:underline-offset-4;
+  }
+
+  cite {
+    @apply not-italic;
+  }
+}

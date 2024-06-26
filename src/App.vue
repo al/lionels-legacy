@@ -1,20 +1,19 @@
 <template>
-  <div>
-    <PDFGenerator @update:pdfDataUrl="updatePdfDataUrl" />
-    <PDFDisplay :pdfDataUrl="pdfDataUrl" />
-  </div>
+  <Navbar />
+  <Header />
+  <Main />
+  <Lionel />
+  <GetInvolved />
+  <Footer />
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import PDFGenerator from './components/PDFGenerator.vue'
-import PDFDisplay from './components/PDFDisplay.vue'
-
-const pdfDataUrl = ref('')
-
-const updatePdfDataUrl = (dataUrl) => {
-  pdfDataUrl.value = dataUrl
-}
+import Navbar from './components/Navbar.vue'
+import Header from './components/Header.vue'
+import Main from './components/Main.vue'
+import Lionel from './components/Lionel.vue'
+import GetInvolved from './components/GetInvolved.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <style scoped></style>
