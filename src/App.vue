@@ -6,16 +6,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import PDFGenerator from './components/PDFGenerator.vue';
-import PDFDisplay from './components/PDFDisplay.vue';
+import { ref } from 'vue'
+import PDFGenerator from './components/PDFGenerator.vue'
+import PDFDisplay from './components/PDFDisplay.vue'
 
-const pdfDataUrl = ref('');
+const pdfDataUrl = ref('')
 
 const updatePdfDataUrl = (dataUrl) => {
-  pdfDataUrl.value = dataUrl;
-};
+  pdfDataUrl.value = dataUrl
+}
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

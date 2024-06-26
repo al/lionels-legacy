@@ -10,7 +10,7 @@ const props = defineProps({
     type: String,
     required: true
   }
-});
+})
 
 const options = {
   pdfOpenParams: {
@@ -23,5 +23,4 @@ const options = {
 }
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

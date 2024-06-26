@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
-import PDFObjectPlugin from 'pdfobject-vue';
+import PDFObjectPlugin from 'pdfobject-vue'
 
 import './assets/main.css'
 import App from './App.vue'
 
 const app = createApp(App)
-app.use(PDFObjectPlugin);
+app.use(PDFObjectPlugin)
 app.mount('#app')
