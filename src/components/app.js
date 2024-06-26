@@ -1,4 +1,4 @@
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 import PosterBuilder from './poster/builder.js'
 import PosterPreview from './poster/preview.js'
 

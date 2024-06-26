@@ -6,7 +6,7 @@ export default defineComponent({
     const name = ref(null)
     const doc = new jsPDF({
       unit: 'px',
-      format: 'a4',
+      format: 'a4'
     })
     const pdf = computed(() => {
       // const doc = new jsPDF()
