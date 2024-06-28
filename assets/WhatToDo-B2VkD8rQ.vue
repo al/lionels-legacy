@@ -16,7 +16,7 @@
   </div>
 
   <h2
-    class="text-center my-6 max-w-full flex-1 font-sans text-3xl font-bold text-gray-500 md:mx-auto md:flex-none leading-none tracking-tight sm:text-4xl"
+    class="text-center my-6 pb-4 max-w-full flex-1 font-sans text-3xl font-bold text-gray-500 md:mx-auto md:flex-none leading-none tracking-tight sm:text-4xl"
   >
     Do the right thing&hellip;
   </h2>
