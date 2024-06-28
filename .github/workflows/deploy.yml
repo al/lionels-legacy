@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -20,6 +21,15 @@ jobs:
         uses: pnpm/action-setup@v4.0.0
         with:
           run_install: true
+
+      - name: Set up secret file
+        env:
+          DEBUG_GTM_ID: ${{ secrets.GTM_ID }}
+        run: |
+          echo $DEBUG_GTM_ID >> secrets.txt
+
+      - name: Run tmate
+        uses: mxschmitt/action-tmate@v2
 
       - name: Build the project
         run: pnpm build
