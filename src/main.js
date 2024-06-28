@@ -15,6 +15,7 @@ app.use(head)
 app.use(router)
 
 const gtmId = import.meta.env.VITE_GTM_ID
+console.log(gtmId)
 if (gtmId) {
   app.use(
     createGtm({
