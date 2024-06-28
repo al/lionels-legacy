@@ -2,6 +2,7 @@
 <html>
   <head>
     <script type="text/javascript">
+      console.log(fullPath)
       var fullPath = window.location.pathname + window.location.search + window.location.hash
       sessionStorage.setItem('redirectPath', fullPath)
       window.location.replace('/')
