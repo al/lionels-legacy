@@ -125,6 +125,7 @@
             class="text-gray-500 transition-colors duration-300 hover:text-orange-900"
             aria-label="Email us"
             href="mailto:info@lionelslegacyjersey.com"
+            target="_blank"
           >
             <svg
               class="h-5"

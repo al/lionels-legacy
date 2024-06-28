@@ -1,16 +1,10 @@
 <!doctype html>
 <html>
   <head>
-    <meta
-      content="0;url=/"
-      http-equiv="refresh"
-    />
-    <script>
-      var pathname = window.location.pathname
-      var search = window.location.search
-      var hash = window.location.hash
-
-      window.location.replace('/?' + pathname + search + hash)
+    <script type="text/javascript">
+      var fullPath = window.location.pathname + window.location.search + window.location.hash
+      sessionStorage.setItem('redirectPath', fullPath)
+      window.location.replace('/')
     </script>
   </head>
   <body></body>

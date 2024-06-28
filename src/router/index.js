@@ -5,6 +5,7 @@ import HomePage0625 from '../views/HomePage0625.vue'
 import HomePage0624a from '../views/HomePage0624a.vue'
 import HomePage0624b from '../views/HomePage0624b.vue'
 import HomePage0620 from '../views/HomePage0620.vue'
+import NotFound from '../views/NotFound.vue'
 import PosterMaker from '../views/PosterMaker.vue'
 
 const routes = [
@@ -44,6 +45,7 @@ const routes = [
     ],
     component: PageLayout,
   },
+  { path: '/:pathMatch(.*)*', component: NotFound },
 ]
 
 const router = createRouter({
@@ -74,6 +76,16 @@ const router = createRouter({
       return { top: 0 }
     }
   },
+})
+
+router.beforeEach((to, from, next) => {
+  const redirectPath = sessionStorage.getItem('redirectPath')
+  if (redirectPath) {
+    sessionStorage.removeItem('redirectPath')
+    next(redirectPath)
+  } else {
+    next()
+  }
 })
 
 export default router
