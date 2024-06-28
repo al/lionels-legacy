@@ -15,9 +15,9 @@
         <div class="z-10 mb-10 max-w-xl flex-1 xpx-10 md:mx-auto md:mb-12 lg:w-1/2 lg:max-w-2xl">
           <h2
             class="my-6 max-w-full scroll-mt-[80px] md:text-center font-sans text-3xl font-bold leading-none tracking-tight text-gray-800 sm:text-4xl md:mx-auto"
-            id="about-lionel"
+            id="speed-matters"
           >
-            Jersey has a network of over 45 miles of Green Lanes
+            Speed Matters
           </h2>
           <p class="mb-6 text-base text-gray-700 md:text-lg">
             Green Lanes are intended principally for enjoyment by pedestrians, cyclists and horse

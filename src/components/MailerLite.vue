@@ -45,12 +45,16 @@
           here.
         </p>
 
-        <div class="ml-form-recaptcha ml-validate-required flex justify-center md:justify-normal">
+        <div
+          class="ml-form-recaptcha ml-validate-required flex justify-center md:justify-normal"
+          v-if="captcha"
+        >
           <div
             class="g-recaptcha inline-block"
             data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"
           ></div>
         </div>
+
         <input
           name="ml-submit"
           type="hidden"
@@ -73,6 +77,13 @@
 
 <script setup>
 import { onMounted } from 'vue'
+
+const props = defineProps({
+  captcha: {
+    type: Boolean,
+    default: false,
+  },
+})
 
 onMounted(() => {
   ;[

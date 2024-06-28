@@ -16,7 +16,7 @@
   </div>
 
   <h2
-    class="text-center my-6 max-w-full flex-1 font-sans text-3xl font-semibold md:tracking-wider text-gray-500 md:mx-auto md:flex-none md:leading-relaxed"
+    class="text-center my-6 max-w-full flex-1 font-sans text-3xl font-bold text-gray-500 md:mx-auto md:flex-none leading-none tracking-tight sm:text-4xl"
   >
     Do the right thing&hellip;
   </h2>
@@ -40,27 +40,6 @@
       <div>
         <h6 class="mb-3 text-xl font-bold leading-5">Stop</h6>
         <p class="mb-3 text-sm text-gray-800">Stop your vehicle as soon as it is safe to do so</p>
-      </div>
-    </div>
-    <div class="flex max-w-md sm:flex-row">
-      <div class="mr-4">
-        <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-indigo-50">
-          <svg
-            class="h-12 w-12 text-orange-accent-400"
-            fill="currentColor"
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
-            <path
-              d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31H476.3c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9v-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1v5.8c0 16.9-2.8 33.5-8.3 49.1z"
-            />
-          </svg>
-        </div>
-      </div>
-      <div>
-        <h6 class="mb-3 text-xl font-bold leading-5">Check</h6>
-        <p class="mb-3 text-sm text-gray-800">Check the animal for signs of injuries</p>
       </div>
     </div>
     <div class="flex max-w-md sm:flex-row">
@@ -103,8 +82,32 @@
               href="tel:07797720331"
               >07797 720 331</a
             >
-            out of hours)
+            out of hours) noting the location of the accident
           </span>
+        </p>
+      </div>
+    </div>
+    <div class="flex max-w-md sm:flex-row">
+      <div class="mr-4">
+        <div class="mb-4 flex h-20 w-20 items-center justify-center rounded-full bg-indigo-50">
+          <svg
+            class="h-12 w-12 text-orange-accent-400"
+            fill="currentColor"
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. -->
+            <path
+              d="M228.3 469.1L47.6 300.4c-4.2-3.9-8.2-8.1-11.9-12.4h87c22.6 0 43-13.6 51.7-34.5l10.5-25.2 49.3 109.5c3.8 8.5 12.1 14 21.4 14.1s17.8-5 22-13.3L320 253.7l1.7 3.4c9.5 19 28.9 31 50.1 31H476.3c-3.7 4.3-7.7 8.5-11.9 12.4L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9zM503.7 240h-132c-3 0-5.8-1.7-7.2-4.4l-23.2-46.3c-4.1-8.1-12.4-13.3-21.5-13.3s-17.4 5.1-21.5 13.3l-41.4 82.8L205.9 158.2c-3.9-8.7-12.7-14.3-22.2-14.1s-18.1 5.9-21.8 14.8l-31.8 76.3c-1.2 3-4.2 4.9-7.4 4.9H16c-2.6 0-5 .4-7.3 1.1C3 225.2 0 208.2 0 190.9v-5.8c0-69.9 50.5-129.5 119.4-141C165 36.5 211.4 51.4 244 84l12 12 12-12c32.6-32.6 79-47.5 124.6-39.9C461.5 55.6 512 115.2 512 185.1v5.8c0 16.9-2.8 33.5-8.3 49.1z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div>
+        <h6 class="mb-3 text-xl font-bold leading-5">Check</h6>
+        <p class="mb-3 text-sm text-gray-800">
+          If possible check on the condition of the animal and offer comfort and support where
+          appropriate
         </p>
       </div>
     </div>

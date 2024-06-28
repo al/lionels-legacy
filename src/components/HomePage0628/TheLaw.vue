@@ -43,8 +43,15 @@
       </p>
 
       <p class="mb-12 text-base text-gray-700 md:text-lg">
-        Under the updated regulations, the driver of a motor vehicle on a public road who thinks he
-        or she has hit or run over a cat must do two things:
+        Under the updated
+        <a
+          class="text-orange-accent-400 transition-colors duration-200 hover:text-orange-900"
+          aria-label="Open the Road Traffic (Jersey) Law 1956 in a new window"
+          href="https://www.jerseylaw.je/laws/current/Pages/25.550.aspx#_Toc151627514"
+          target="_blank"
+          >regulations<ArrowTopRightOnSquareIcon class="w-3 inline-block pb-2" /> </a
+        >, the driver of a motor vehicle on a public road who thinks he or she has hit or run over a
+        cat must do two things:
       </p>
       <ol
         class="marker:text-orange-accent-400 mb-12 px-10 text-base text-gray-700 md:text-lg list-decimal"
@@ -55,61 +62,9 @@
         </li>
         <li>
           The driver must notify either a person who is responsible for caring for the cat or the
-          JSPCA.
+          JSPCA noting the location of the accident.
         </li>
       </ol>
-
-      <figure class="md:text-l mb-12 px-10 text-left text-gray-800">
-        <blockquote
-          class="leading-loose border-1 py-3 border-y"
-          cite="https://www.jerseylaw.je/laws/current/Pages/25.550.aspx#_Toc151627514"
-        >
-          <ol
-            class="list-decimal font-serif"
-            start="52"
-          >
-            <li class="pl-2">
-              <span class="font-semibold">Duty of driver of vehicle in case of accident</span>
-
-              <ol
-                class="list-decimal pl-5"
-                start="4"
-              >
-                <li class="pl-2">
-                  Subject to paragraph (5), if a cat is hit by a motor vehicle while that vehicle is
-                  being driven on a road, the driver of the vehicle must –
-
-                  <ol class="list-latin pl-5">
-                    <li class="pl-2">
-                      stop the vehicle as soon as it is safe or reasonably practicable to do so; and
-                    </li>
-                    <li class="pl-2">
-                      notify a person or body described in paragraph (6) of –
-
-                      <ol class="list-roman pl-5">
-                        <li class="pl-2">when the cat was hit, and</li>
-                        <li class="pl-2">
-                          the location where the cat was last seen by the driver.
-                        </li>
-                      </ol>
-                    </li>
-                  </ol>
-                </li>
-              </ol>
-            </li>
-          </ol>
-        </blockquote>
-        <cite class="block text-right pt-3"
-          >Article 52(4) of the
-          <a
-            class="text-orange-accent-400 transition-colors duration-200 hover:text-orange-900"
-            aria-label=""
-            href="https://www.jerseylaw.je/laws/current/Pages/25.550.aspx#_Toc151627514"
-            target="_blank"
-            >Road Traffic (Jersey) Law 1956
-            <ArrowTopRightOnSquareIcon class="w-3 inline-block pb-2" /> </a
-        ></cite>
-      </figure>
     </div>
   </div>
 </template>
