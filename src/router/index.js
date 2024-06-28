@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import PageLayout from '../components/Layout/PageLayout.vue'
+import HomePage0628 from '../views/HomePage0628.vue'
 import HomePage0625 from '../views/HomePage0625.vue'
 import HomePage0624a from '../views/HomePage0624a.vue'
 import HomePage0624b from '../views/HomePage0624b.vue'
@@ -11,9 +12,14 @@ const routes = [
     path: '/',
     children: [
       {
+        component: HomePage0628,
+        name: 'homePage0628',
+        path: '/',
+      },
+      {
         component: HomePage0625,
         name: 'homePage0625',
-        path: '/',
+        path: '/home-0625',
       },
       {
         component: HomePage0624a,

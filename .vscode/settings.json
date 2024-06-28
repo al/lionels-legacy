@@ -8,6 +8,7 @@
     "*.css": "tailwindcss"
   },
   "cSpell.words": [
+    "anticsrf",
     "colour",
     "fontawesome",
     "Fonticons",
@@ -15,11 +16,15 @@
     "greenlane",
     "headlessui",
     "heroicons",
+    "inputmask",
     "JSPCA",
     "lionels",
     "offence",
     "Organisations",
     "Ouen",
-    "svgrepo"
+    "rushstack",
+    "svgrepo",
+    "Unhead",
+    "webform"
   ]
 }

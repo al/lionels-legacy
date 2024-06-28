@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@gtm-support/vue-gtm':
+        specifier: ^3.0.1
+        version: 3.0.1(vue@3.4.29(typescript@5.4.5))
       '@headlessui/vue':
         specifier: ^1.7.22
         version: 1.7.22(vue@3.4.29(typescript@5.4.5))
@@ -20,6 +23,9 @@ importers:
       '@vueuse/core':
         specifier: ^10.11.0
         version: 10.11.0(vue@3.4.29(typescript@5.4.5))
+      dotenv:
+        specifier: ^16.4.5
+        version: 16.4.5
       jspdf:
         specifier: ^2.5.1
         version: 2.5.1
@@ -366,6 +372,14 @@ packages:
   '@eslint/js@8.57.0':
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@gtm-support/core@3.0.1':
+    resolution: {integrity: sha512-SctcoqvvAbGAgZzOb7DZ4wjbZF3ZS7Las3qIEByv6g7mzPf4E9LpRXcQzjmywYLcUx2jys7PWJAa3s5slvj/0w==}
+
+  '@gtm-support/vue-gtm@3.0.1':
+    resolution: {integrity: sha512-SeLN3R+5gHJ+1AtJPP4/+2lJ6vOfXo1pL094//GcKY7RrMk3ltxIS/CJ3PSlL2Dpxjr9UAov0m4K1SdvYj3Xzw==}
+    peerDependencies:
+      vue: '>= 3.2.0 < 4.0.0'
 
   '@headlessui/vue@1.7.22':
     resolution: {integrity: sha512-Hoffjoolq1rY+LOfJ+B/OvkhuBXXBFgd8oBlN+l1TApma2dB0En0ucFZrwQtb33SmcCqd32EQd0y07oziXWNYg==}
@@ -1064,6 +1078,10 @@ packages:
   dot-prop@5.3.0:
     resolution: {integrity: sha512-QM8q3zDe58hqUqjraQOmzZ1LIH9SWQJTlEKCH4kJ2oQvLZk7RbQXvtDM2XEq3fwkV9CCvvH4LA0AV+ogFsBM2Q==}
     engines: {node: '>=8'}
+
+  dotenv@16.4.5:
+    resolution: {integrity: sha512-ZmdL2rui+eB2YwhsWzjInR8LldtZHGDoQ1ugH85ppHKwpUHL7j7rN0Ti9NCnGiQbhaZ11FpR+7ao1dNsmduNUg==}
+    engines: {node: '>=12'}
 
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
@@ -2690,6 +2708,11 @@ packages:
     peerDependencies:
       vue: ^3.2.0
 
+  vue-router@4.4.0:
+    resolution: {integrity: sha512-HB+t2p611aIZraV2aPSRNXf0Z/oLZFrlygJm+sZbdJaW6lcFqEDQwnzUBXn+DApw+/QzDU/I9TeWx9izEjTmsA==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue3-carousel@0.3.3:
     resolution: {integrity: sha512-VsuOBE4LG9lxAiYGR9U7ps4RyJ4oFQGzk79/49ybvoxzNpahPAVWIDHKK3a1lOv0CSplFq6u4FvaFLZ8x3FgWg==}
     peerDependencies:
@@ -3021,6 +3044,15 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.0': {}
+
+  '@gtm-support/core@3.0.1': {}
+
+  '@gtm-support/vue-gtm@3.0.1(vue@3.4.29(typescript@5.4.5))':
+    dependencies:
+      '@gtm-support/core': 3.0.1
+      vue: 3.4.29(typescript@5.4.5)
+    optionalDependencies:
+      vue-router: 4.4.0(vue@3.4.29(typescript@5.4.5))
 
   '@headlessui/vue@1.7.22(vue@3.4.29(typescript@5.4.5))':
     dependencies:
@@ -3750,6 +3782,8 @@ snapshots:
   dot-prop@5.3.0:
     dependencies:
       is-obj: 2.0.0
+
+  dotenv@16.4.5: {}
 
   eastasianwidth@0.2.0: {}
 
@@ -5422,6 +5456,12 @@ snapshots:
     dependencies:
       '@vue/devtools-api': 6.6.3
       vue: 3.4.29(typescript@5.4.5)
+
+  vue-router@4.4.0(vue@3.4.29(typescript@5.4.5)):
+    dependencies:
+      '@vue/devtools-api': 6.6.3
+      vue: 3.4.29(typescript@5.4.5)
+    optional: true
 
   vue3-carousel@0.3.3(vue@3.4.29(typescript@5.4.5)):
     dependencies:

@@ -96,30 +96,13 @@
             </ul>
           </div>
         </div>
-        <div class="mt-10 justify-self-end md:mt-0 lg:col-span-2">
+        <div class="mt-10 justify-self-end md:mt-0 lg:col-span-2 w-full">
           <span
             class="scroll-mt-[80px] text-base font-medium tracking-wide text-gray-300"
             id="stay-in-touch"
             >Subscribe for updates</span
           >
-          <form class="mt-4 flex flex-col md:flex-row">
-            <input
-              class="mb-3 h-12 w-full flex-grow appearance-none rounded border border-gray-300 bg-white px-4 shadow-sm transition duration-200 focus:border-orange-600 focus:shadow-outline focus:outline-none md:mb-0 md:mr-2"
-              placeholder="Email"
-              required="true"
-              type="text"
-            />
-            <button
-              class="inline-flex h-12 items-center justify-center rounded bg-orange-600 px-6 font-medium tracking-wide text-white shadow-md transition duration-200 hover:bg-orange-900 focus:shadow-outline focus:outline-none"
-              type="submit"
-            >
-              Subscribe
-            </button>
-          </form>
-          <p class="mt-4 text-sm text-gray-500">
-            If you would like to receive occasional updates about our campaign to raise awareness of
-            cat safety issues, subscribe here.
-          </p>
+          <MailerLite />
         </div>
       </div>
       <div class="flex flex-col justify-between border-t border-gray-800 pb-10 pt-5 sm:flex-row">
@@ -175,3 +158,7 @@
     </div>
   </footer>
 </template>
+
+<script setup>
+import MailerLite from '../MailerLite.vue'
+</script>

@@ -76,6 +76,7 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
+  { name: 'Home 28/06', href: { name: 'homePage0628' } },
   { name: 'Home 25/06', href: { name: 'homePage0625' } },
   { name: 'Home 24/06 b', href: { name: 'homePage0624b' } },
   { name: 'Home 24/06 a', href: { name: 'homePage0624a' } },

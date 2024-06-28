@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import { createGtm } from '@gtm-support/vue-gtm'
 import { createHead } from '@unhead/vue'
 import { InferSeoMetaPlugin } from '@unhead/addons'
 import router from './router'
@@ -9,5 +10,18 @@ import '/src/assets/stylesheets/index.css'
 const head = createHead({
   plugins: [InferSeoMetaPlugin()],
 })
+const app = createApp(App)
+app.use(head)
+app.use(router)
 
-createApp(App).use(router).use(head).mount('#app')
+const gtmId = import.meta.env.VITE_GTM_ID
+if (gtmId) {
+  app.use(
+    createGtm({
+      id: gtmId,
+      vueRouter: router,
+    }),
+  )
+}
+
+app.mount('#app')
