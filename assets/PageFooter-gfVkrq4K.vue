@@ -102,7 +102,7 @@
             id="stay-in-touch"
             >Subscribe for updates</span
           >
-          <MailerLite />
+          <MailerLite :captcha="false" />
         </div>
       </div>
       <div class="flex flex-col justify-between border-t border-gray-800 pb-10 pt-5 sm:flex-row">
@@ -124,7 +124,7 @@
           <a
             class="text-gray-500 transition-colors duration-300 hover:text-orange-900"
             aria-label="Email us"
-            href="mailto:#"
+            href="mailto:info@lionelslegacyjersey.com"
           >
             <svg
               class="h-5"
