@@ -14,8 +14,13 @@ const routes = [
     children: [
       {
         component: HomePage0628,
-        name: 'homePage0628',
+        name: 'homePage',
         path: '/',
+      },
+      {
+        component: HomePage0628,
+        name: 'homePage0628',
+        path: '/home-0628',
       },
       {
         component: HomePage0625,

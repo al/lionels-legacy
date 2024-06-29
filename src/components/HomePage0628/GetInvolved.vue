@@ -1,8 +1,11 @@
 <template>
-  <div class="my-6 mb-10 max-w-xl sm:text-center mx-auto md:mb-12 lg:max-w-2xl">
+  <div
+    class="px-4 sm:px-0 my-6 mb-10 max-w-xl lg:text-center mx-auto md:mb-12 lg:max-w-2xl"
+    zclass="sm:text-center mx-auto px-4 sm:max-w-xl md:max-w-full md:px-24 lg:max-w-5xl lg:px-8 mb-4"
+  >
     <h2
       class="mb-6 max-w-full scroll-mt-[80px] font-sans text-3xl font-bold leading-none tracking-tight text-gray-800 sm:text-4xl md:mx-auto"
-      id="what-to-do"
+      id="spread-the-word"
     >
       Help Spread the Word
     </h2>

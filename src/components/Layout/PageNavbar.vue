@@ -75,26 +75,21 @@ import { ref } from 'vue'
 import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
-const navigation = [
-  { name: 'Home 28/06', href: { name: 'homePage0628' } },
-  { name: 'Home 25/06', href: { name: 'homePage0625' } },
-  { name: 'Home 24/06 b', href: { name: 'homePage0624b' } },
-  { name: 'Home 24/06 a', href: { name: 'homePage0624a' } },
-  { name: 'Home 20/06', href: { name: 'homePage0620' } },
-]
-
 // const navigation = [
-//   { name: 'Home', href: { name: 'homePage' } },
-//   { name: 'Old', href: { name: 'homePage1' } },
-//   { name: 'Poster', href: { name: 'posterMaker' } },
-//   { name: 'The Law', href: { name: 'homePage', hash: '#the-law' } },
-//   { name: 'What to do', href: { name: 'homePage', hash: '#what-to-do' } },
-//   { name: 'Speed Matters', href: { name: 'homePage', hash: '#speed-matters' } },
-//   { name: "Lionel's Story", href: { name: 'homePage', hash: '#lionels-story' } },
-//   { name: 'Get involved', href: { name: 'homePage', hash: '#get-involved' } },
-//   { name: 'Resources', href: { name: 'homePage', hash: '#resources' } },
-//   { name: 'Stay in touch', href: { name: 'homePage', hash: '#stay-in-touch' } },
+//   { name: 'Home 28/06', href: { name: 'homePage0628' } },
+//   { name: 'Home 25/06', href: { name: 'homePage0625' } },
+//   { name: 'Home 24/06 b', href: { name: 'homePage0624b' } },
+//   { name: 'Home 24/06 a', href: { name: 'homePage0624a' } },
+//   { name: 'Home 20/06', href: { name: 'homePage0620' } },
 // ]
+
+const navigation = [
+  { name: 'About Lionel', href: { name: 'homePage', hash: '#about-lionel' } },
+  { name: 'What you should know', href: { name: 'homePage', hash: '#what-to-know' } },
+  { name: 'Spread the word', href: { name: 'homePage', hash: '#spread-the-word' } },
+  { name: 'Speed Matters', href: { name: 'homePage', hash: '#speed-matters' } },
+  { name: 'Resources', href: { name: 'homePage', hash: '#resources' } },
+]
 
 const mobileMenuOpen = ref(false)
 </script>

@@ -4,7 +4,7 @@
   >
     <h2
       class="my-6 max-w-full scroll-mt-[80px] font-sans text-3xl font-bold leading-none tracking-tight text-gray-800 sm:text-4xl md:mx-auto"
-      id="what-to-do"
+      id="what-to-know"
     >
       If a vehicle you are driving hits a cat you must act
     </h2>
