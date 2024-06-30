@@ -60,7 +60,7 @@
           <p class="mb-6 text-base text-gray-700 md:text-lg">
             Lionel&rsquo;s story is one which is alarmingly frequent on Jersey&rsquo;s
             &ldquo;safe&rdquo; roads. Driver&rsquo;s often fail to report such accidents. Out of 4
-            cats killed in a 100m stretch of road in Rue de Grantez in the last 5 years, only one
+            cats killed in a 125m stretch of road in Rue de Grantez in the last 8 years, only one
             driver stopped to let somebody know.
           </p>
         </div>

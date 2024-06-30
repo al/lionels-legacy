@@ -23,7 +23,7 @@
       <a
         class="font-semibold text-orange-accent-400 transition-colors duration-200 hover:text-orange-900"
         aria-label=""
-        href="https://docs.google.com/document/d/166NzdHGobSgdCHRXJomGKkriagbzZHCzWpUEPRtPNxs/edit?usp=sharing"
+        href="https://docs.google.com/document/d/1xCiRjXtpQY9gwm_BuuUFP3mt5L4Trz3E/edit?usp=sharing&ouid=106693369016037449070&rtpof=true&sd=true"
         target="_blank"
       >
         poster template
@@ -35,7 +35,7 @@
       <a
         class="inline-block font-semibold text-orange-accent-400 transition-colors duration-200 hover:text-orange-900"
         aria-label=""
-        href="https://docs.google.com/document/d/166NzdHGobSgdCHRXJomGKkriagbzZHCzWpUEPRtPNxs/edit?usp=sharing"
+        href="https://docs.google.com/document/d/1xCiRjXtpQY9gwm_BuuUFP3mt5L4Trz3E/edit?usp=sharing&ouid=106693369016037449070&rtpof=true&sd=true"
         target="_blank"
       >
         <svg
