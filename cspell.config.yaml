@@ -4,6 +4,7 @@ dictionaryDefinitions: []
 language: en,en_GB
 ignorePaths:
   - .*
+  - '*.svg'
   - .gitignore
   - .vscode/**
   - dist/**
@@ -13,11 +14,20 @@ ignoreWords:
   - argjson
   - elif
   - esac
+  - fontawesome
+  - Fonticons
+  - Grantez
+  - headlessui
+  - JSPCA
+  - JSPCA's
   - lintstagedrc
   - lionels
+  - Lucida
+  - Mansalva
   - mktemp
   - realpath
   - substr
+  - svgrepo
   - vueuse
 import: []
 version: 0.2

@@ -1,9 +1,15 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 /** @type { import('tailwindcss').Config } */
 export default {
   content: ['./index.html', './src/**/*.{html,js,vue}'],
   plugins: [require('@tailwindcss/forms')],
   theme: {
     extend: {
+      fontFamily: {
+        cursive: ['Mansalva', 'Lucida Handwriting', 'cursive'],
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         red: {
           50: '#ffebee',
