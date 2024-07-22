@@ -1,0 +1,23 @@
+dictionaries:
+  - markdown
+dictionaryDefinitions: []
+language: en,en_GB
+ignorePaths:
+  - .*
+  - .gitignore
+  - .vscode/**
+  - dist/**
+  - node_modules/**
+  - pnpm-lock.yaml
+ignoreWords:
+  - argjson
+  - elif
+  - esac
+  - lintstagedrc
+  - lionels
+  - mktemp
+  - realpath
+  - substr
+import: []
+version: 0.2
+words: []

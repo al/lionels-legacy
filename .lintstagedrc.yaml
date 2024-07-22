@@ -1,0 +1,9 @@
+'*':
+  - pnpm exec cspell --no-must-find-files --files
+  - pnpm exec prettier --check --ignore-unknown
+
+'*.{cjs,js,json,jsx,md,mjs,ts,tsx,yaml,yml}':
+  - pnpm exec eslint --no-warn-ignored
+
+'*.{css,scss}':
+  - pnpm exec stylelint

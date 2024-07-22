@@ -1,0 +1,133 @@
+#!/usr/bin/env bash
+
+SCRIPT_DIR=$(dirname "$(realpath "$0")")
+PROJECT_DIR="${SCRIPT_DIR}/.."
+CONFIG="${PROJECT_DIR}/cspell.config.yaml"
+
+# Assumes GNU diff.
+#
+${SCRIPT_DIR}/check-dependencies 'bash@>=4.2' diff jq yq || exit 1
+
+COLOUR_RED='\033[0;31m'
+COLOUR_GREEN='\033[0;32m'
+COLOUR_NONE='\033[0m'
+
+TMP_DIR="$(realpath "$(mktemp -d)")"
+TMP_BACKUP="${TMP_DIR}/$(basename "${CONFIG}")"
+TMP_FILE="${TMP_DIR}/tmp"
+
+function on_exit() {
+  rm -fr "${TMP_DIR}"
+}
+trap on_exit EXIT
+
+function on_error {
+  mv "${TMP_BACKUP}" "${CONFIG}"
+}
+trap on_error ERR INT
+
+cp "${CONFIG}" "${TMP_BACKUP}"
+yq -i '.ignoreWords = []' "${CONFIG}"
+pnpm exec cspell lint "${PROJECT_DIR}" --no-exit-code --no-progress -u --words-only > "${TMP_FILE}"
+cp "${TMP_BACKUP}" "${CONFIG}"
+
+trap - ERR INT
+
+OLD_IGNORE_WORDS="$(yq '.ignoreWords[]' "${CONFIG}")"
+NEW_IGNORE_WORDS=()
+
+# NOTE: In `sort -f -k 1,1 -k 1,1`, the `-f -k 1,1` stipulates a primary case-
+#       insensitive sort, and the second `k 1,1` stipulates a case-sensitive
+#       sort as tie-breaker.
+#
+CHANGES="$( \
+  diff --ignore-trailing-space --new-line-format='+%L' --old-line-format='-%L' --unchanged-line-format=':%L' \
+    <(echo -e "${OLD_IGNORE_WORDS}" | sort -f -k 1,1 -k 1,1 | uniq) \
+    <(awk '{ print $1 }' "${TMP_FILE}" | sort -f -k 1,1 -k 1,1 | uniq) | \
+  grep -v '^:$'
+)"
+
+if [[ -n "${CHANGES}" ]]; then
+  echo -e "${CHANGES}" | \
+    awk -v default="${COLOUR_NONE}" -v green="${COLOUR_GREEN}" -v red="${COLOUR_RED}" '
+      /^:/ { print "  " substr($0, 2); next }
+      /^\+/ { print green "+ " substr($0, 2) default; next }
+      /^-/ { print red "- " substr($0, 2) default }
+    '
+
+  AUTO_RESPONSE=
+  CHANGES=(${CHANGES})
+
+  while [ ${#CHANGES[@]} -gt 0 ]; do
+    action="${CHANGES[0]:0:1}"
+    word="${CHANGES[0]:1}"
+
+    if [[ -n "${word}" ]]; then
+      if [[ -n ${AUTO_RESPONSE} ]]; then
+        response="${AUTO_RESPONSE}"
+      elif [[ "${action}" == ':' ]]; then
+        response=y
+      else
+        if [[ "${action}" == '+' ]]; then
+          prompt="Add ${COLOUR_GREEN}'${word}'${COLOUR_NONE} to ignoreWords?"
+        elif [[ "${action}" == '-' ]]; then
+          prompt="Remove ${COLOUR_RED}'${word}'${COLOUR_NONE} from ignoreWords?"
+        else
+          echo "Unrecognised action '#{action}' for word '${word}'." > /dev/stderr
+          exit 1
+        fi
+
+        read -p "$(echo -e ${prompt}) [y Y n N q ?]? " response
+      fi
+
+      case "${response}" in
+        [y]) # Accept this change.
+          [ "${action}" != '-' ] && NEW_IGNORE_WORDS+=("${word}")
+          ;;
+        [Y]) # Accept this and all remaining changes.
+          AUTO_RESPONSE=y
+          continue
+          ;;
+        [n]) # Reject this change.
+          [ "${action}" != '+' ] && NEW_IGNORE_WORDS+=("${word}")
+          ;;
+        [N]) # Reject this and all remaining changes.
+          AUTO_RESPONSE=n
+          continue
+          ;;
+        [q]) # Quit without saving any changes.
+          exit
+          ;;
+        [?]) # Help.
+          echo
+          echo 'y - yes, accept this change'
+          echo 'Y - yes, accept this this AND ALL REMAINING CHANGES'
+          echo 'n - no, reject this change'
+          echo 'N - no, reject this this AND ALL REMAINING CHANGES'
+          echo 'q - quit without saving any changes'
+          echo
+          continue
+          ;;
+      esac
+    fi
+
+    CHANGES=("${CHANGES[@]:1}")
+  done
+fi
+
+echo
+
+NEW_IGNORE_WORDS=$(printf "%s\n" "${NEW_IGNORE_WORDS[@]}")
+
+if [ "${OLD_IGNORE_WORDS}" = "${NEW_IGNORE_WORDS}" ]; then
+  echo 'Nothing to do.'
+else
+  NEW_IGNORE_WORDS=$(echo -e "${NEW_IGNORE_WORDS}" | jq -R . | jq -cs 'if . == [""] then [] end')
+
+  yq -oj "${CONFIG}" | \
+    jq '.ignoreWords = $words' --argjson words "${NEW_IGNORE_WORDS}" | \
+    yq --output-format yaml --input-format json eval '.' > "${TMP_FILE}" &&
+    mv "${TMP_FILE}" "${CONFIG}"
+
+  echo "Updated ${CONFIG} ignoreWords."
+fi

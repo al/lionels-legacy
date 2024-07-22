@@ -1,0 +1,145 @@
+#!/usr/bin/env bash
+
+function show_help {
+  echo "Usage: $(basename "$0") [OPTIONS] COMMAND[@VERSION]..."
+  echo
+  echo 'Check if the specified commands are installed and meet any optional version requirements.'
+  echo
+  echo 'Options:'
+  echo '  -h, --help      Show this help message and exit.'
+  echo
+  echo 'Examples:'
+  echo "  $(basename "$0") foo bar"
+  echo "  $(basename "$0") foo@^1.2 bar@=2.3.4 'baz@>3.1'"
+  echo
+  echo 'Supported version operators:'
+  echo '  =1.2.3  Exact version (1.2.3)'
+  echo '  ^1.2    Any version with the same major version (1.x.x)'
+  echo '  ~1.2    Any version with the same major and minor version (1.2.x)'
+  echo '  >1.2.3  Greater than version (1.2.3)'
+  echo '  >=1.2.3 Greater than or equal to version (1.2.3)'
+  echo
+}
+
+if [[ "$1" == '-h' || "$1" == '--help' ]]; then
+  show_help
+
+  exit 0
+fi
+
+function command_exists {
+  command -v "$1" >/dev/null 2>&1
+}
+
+function get_version {
+  "$1" --version 2>/dev/null | grep -oE '[0-9]+(\.[0-9]+)+' | head -n 1
+}
+
+function compare_versions {
+  local version=$1
+  local operator=$2
+  local required_version=$3
+
+  IFS='.' read -r -a version_parts <<< "${version}"
+  IFS='.' read -r -a required_version_parts <<< "${required_version}"
+
+  for ((i=0; i<${#required_version_parts[@]}; i++)); do
+    local v1=${version_parts[i]:-0}
+    local v2=${required_version_parts[i]:-0}
+
+    if [[ "${v1}" -lt "${v2}" ]]; then
+      return 1
+    elif [[ "${v1}" -gt "${v2}" ]]; then
+      return 0
+    fi
+  done
+
+  return 0
+}
+
+function version_satisfies {
+  local version=$1
+  local version_spec=$2
+  local operator="${version_spec:0:2}"
+  local required_version="${version_spec:2}"
+
+  if [[ "${operator}" != '==' && "${operator}" != '!=' && "${operator}" != '>=' ]]; then
+    operator="${version_spec:0:1}"
+    required_version="${version_spec:1}"
+  fi
+
+  case "${operator}" in
+    ^)
+      local major=${version%%.*}
+      local required_major=${required_version%%.*}
+
+      [[ "${major}" == "${required_major}" ]]
+      ;;
+    ~)
+      local major=${version%%.*}
+      local required_major=${required_version%%.*}
+
+      local minor=${version#*.}; minor=${minor%%.*}
+      local required_minor=${required_version#*.}; required_minor=${required_minor%%.*}
+
+      [[ "${major}" == "${required_major}" && "${minor}" == "${required_minor}" ]]
+      ;;
+    =)
+      [[ "${version}" == "${required_version}" ]]
+      ;;
+    '>')
+      compare_versions "${version}" '>' "${required_version}"
+      ;;
+    '>=')
+      compare_versions "${version}" '>=' "${required_version}"
+      ;;
+    *)
+      [[ "${version}" == "${version_spec}" ]]
+      ;;
+  esac
+}
+
+required_dependencies=("$@")
+missing_dependencies=()
+
+for dependency in "${required_dependencies[@]}"; do
+  command="${dependency%@*}"
+  version_spec="${dependency#*@}"
+
+  if ! command_exists "${command}"; then
+    missing_dependencies+=("${dependency}")
+  elif [[ "${version_spec}" != "${command}" ]]; then
+    version=$(get_version "${command}")
+    if ! version_satisfies "${version}" "${version_spec}"; then
+      missing_dependencies+=("${dependency} (version ${version} does not satisfy ${version_spec})")
+    fi
+  fi
+done
+
+if [ ${#missing_dependencies[@]} -gt 0 ]; then
+  echo 'The following required dependencies are missing or do not meet version requirements:'
+  printf '  %s\n' "${missing_dependencies[@]}"
+  echo
+  echo 'Please install them to continue.'
+  echo
+
+  case "$(uname -s)" in
+    Linux*)
+      echo 'On Debian-based systems (like Ubuntu) try:'
+      echo "  sudo apt-get install ${missing_dependencies[*]}"
+      echo 'On Red Hat-based systems (like CentOS) try:'
+      echo "  sudo yum install ${missing_dependencies[*]}"
+      ;;
+    Darwin*)
+      echo 'On macOS using Homebrew try:'
+      echo "  brew install ${missing_dependencies[*]}"
+      ;;
+    *)
+      echo "Please install '${missing_dependencies[*]}' manually."
+      ;;
+  esac
+
+  exit 1
+fi
+
+echo 'All required dependencies are installed and meet version requirements.'
