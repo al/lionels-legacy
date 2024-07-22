@@ -7,6 +7,7 @@ import ogImageSrc from '@/assets/images/lionel-1.jpg'
 import { useHeadSafe } from '@unhead/vue'
 import { ref } from 'vue'
 import { RouterView } from 'vue-router'
+// import { SchemaOrgUnheadPlugin } from '@unhead/schema-org'
 
 const ogImageUrl = ref(ogImageSrc)
 
@@ -26,9 +27,20 @@ useHeadSafe({
     { property: 'og:image', content: ogImageUrl },
   ],
   templateParams: {
+    schemaOrg: {
+      host: 'https://example.com',
+    },
     separator: '|',
     siteName: "Lionel's Legacy Jersey",
   },
   titleTemplate: '%s %separator %siteName',
 })
+
+// useSchemaOrg([
+//   // @todo Select Identity: http://unhead.unjs.io/schema-org/recipes/identity
+//   defineWebSite({
+//     name: 'My Awesome Website',
+//   }),
+//   defineWebPage(),
+// ])
 </script>
