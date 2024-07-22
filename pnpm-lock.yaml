@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@gtm-support/vue-gtm':
+        specifier: ^3.0.1
+        version: 3.0.1(vue@3.4.33(typescript@5.4.5))
       '@headlessui/vue':
         specifier: ^1.7.22
         version: 1.7.22(vue@3.4.33(typescript@5.4.5))
@@ -753,6 +756,14 @@ packages:
   '@eslint/js@8.57.0':
     resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+
+  '@gtm-support/core@3.0.1':
+    resolution: {integrity: sha512-SctcoqvvAbGAgZzOb7DZ4wjbZF3ZS7Las3qIEByv6g7mzPf4E9LpRXcQzjmywYLcUx2jys7PWJAa3s5slvj/0w==}
+
+  '@gtm-support/vue-gtm@3.0.1':
+    resolution: {integrity: sha512-SeLN3R+5gHJ+1AtJPP4/+2lJ6vOfXo1pL094//GcKY7RrMk3ltxIS/CJ3PSlL2Dpxjr9UAov0m4K1SdvYj3Xzw==}
+    peerDependencies:
+      vue: '>= 3.2.0 < 4.0.0'
 
   '@headlessui/vue@1.7.22':
     resolution: {integrity: sha512-Hoffjoolq1rY+LOfJ+B/OvkhuBXXBFgd8oBlN+l1TApma2dB0En0ucFZrwQtb33SmcCqd32EQd0y07oziXWNYg==}
@@ -3641,6 +3652,15 @@ snapshots:
       - supports-color
 
   '@eslint/js@8.57.0': {}
+
+  '@gtm-support/core@3.0.1': {}
+
+  '@gtm-support/vue-gtm@3.0.1(vue@3.4.33(typescript@5.4.5))':
+    dependencies:
+      '@gtm-support/core': 3.0.1
+      vue: 3.4.33(typescript@5.4.5)
+    optionalDependencies:
+      vue-router: 4.4.0(vue@3.4.33(typescript@5.4.5))
 
   '@headlessui/vue@1.7.22(vue@3.4.33(typescript@5.4.5))':
     dependencies:
