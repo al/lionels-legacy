@@ -17,7 +17,6 @@ ignoreWords:
   - lionels
   - mktemp
   - realpath
-  - stylelint
   - substr
   - vueuse
 import: []

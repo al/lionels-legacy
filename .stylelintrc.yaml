@@ -1,6 +1,7 @@
 extends:
   - stylelint-config-standard
   - stylelint-config-recommended-vue
+  - stylelint-config-tailwindcss
 rules:
   color-no-invalid-hex: true
   font-family-no-duplicate-names: true
