@@ -3,6 +3,7 @@ import '/src/assets/stylesheets/index.css'
 import { createGtm } from '@gtm-support/vue-gtm'
 import { InferSeoMetaPlugin } from '@unhead/addons'
 import { createHead } from '@unhead/vue'
+import PDFObjectPlugin from 'pdfobject-vue'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
@@ -14,6 +15,7 @@ const head = createHead({
 })
 
 app.use(head)
+app.use(PDFObjectPlugin)
 app.use(router)
 
 const gtmId = import.meta.env.VITE_GTM_ID

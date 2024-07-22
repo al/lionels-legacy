@@ -81,6 +81,7 @@ const navigation = [
   { name: 'Spread the word', href: { name: 'homePage', hash: '#spread-the-word' } },
   { name: 'Speed Matters', href: { name: 'homePage', hash: '#speed-matters' } },
   { name: 'Resources', href: { name: 'homePage', hash: '#resources' } },
+  { name: 'Build a Poster', href: { name: 'posterBuilder' } },
 ]
 
 const mobileMenuOpen = ref(false)

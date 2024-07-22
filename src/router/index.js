@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import PageLayout from '../components/Layout/PageLayout.vue'
 import HomePage from '../views/HomePage.vue'
 import NotFound from '../views/NotFound.vue'
+import PosterBuilder from '../views/PosterBuilder.vue'
 
 const routes = [
   {
@@ -10,6 +11,11 @@ const routes = [
         component: HomePage,
         name: 'homePage',
         path: '/',
+      },
+      {
+        component: PosterBuilder,
+        name: 'posterBuilder',
+        path: '/build-a-poster',
       },
     ],
     component: PageLayout,

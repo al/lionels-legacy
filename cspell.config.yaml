@@ -21,13 +21,18 @@ ignoreWords:
   - headlessui
   - inputmask
   - JSPCA
+  - Jspca
+  - jspca
   - JSPCA's
+  - jspdf
   - lintstagedrc
   - lionels
   - lionelslegacyjersey
   - Lucida
   - Mansalva
   - mktemp
+  - navpanes
+  - pdfobject
   - predeploy
   - realpath
   - substr
@@ -35,7 +40,9 @@ ignoreWords:
   - Unhead
   - unhead
   - vueuse
+  - wdth
   - webform
+  - wght
 import: []
 version: 0.2
 words: []
