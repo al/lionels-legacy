@@ -3,8 +3,7 @@ updates:
     ignore: []
     package-ecosystem: npm
     registries:
-      npm-registry:
-        type: npm
+      - type: npm
         url: https://registry.npmjs.org
     schedule:
       interval: weekly
