@@ -1,9 +1,15 @@
 updates:
-  - directory: /
+  - commit-message:
+      include: scope
+      prefix: core
+    directory: /
     package-ecosystem: npm
     schedule:
       interval: weekly
-  - directory: /
+  - commit-message:
+      include: scope
+      prefix: ci
+    directory: /
     package-ecosystem: github-actions
     schedule:
       interval: weekly
