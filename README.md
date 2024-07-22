@@ -22,6 +22,16 @@ Install Node dependencies, including the requisite version of Node if necessary 
 pnpm install
 ```
 
+#### Environment
+
+Ensure that any essential environment variables are defined (consult [.env.development](.env.development)).
+
+For sensitive environment variables or ones that should otherwise not be committed, use a `.local` file, e.g. `.env.development.local`.
+
+When adding a dependency upon a new environment variable, be sure to update the [.env.development](.env.development) and [.env.production](.env.production) files in order to document it.
+
+Any environment variable whose name is prefixed with `VITE_` will be exposed to the Vite processed code.
+
 ### Compile and Start a Development Server with Hot-Reloading
 
 ```sh

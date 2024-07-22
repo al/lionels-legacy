@@ -1,6 +1,9 @@
 # File created using '.gitignore Generator' for Visual Studio Code: https://bit.ly/vscode-gig
-# Created by https://www.toptal.com/developers/gitignore/api/vuejs,vue,vs,visualstudiocode,visualstudio,vim,textmate,osx,node,macos,git
-# Edit at https://www.toptal.com/developers/gitignore?templates=vuejs,vue,vs,visualstudiocode,visualstudio,vim,textmate,osx,node,macos,git
+# Created by https://www.toptal.com/developers/gitignore/api/vuejs,vue,vs,visualstudiocode,visualstudio,vim,textmate,osx,node,macos,git,dotenv
+# Edit at https://www.toptal.com/developers/gitignore?templates=vuejs,vue,vs,visualstudiocode,visualstudio,vim,textmate,osx,node,macos,git,dotenv
+
+### dotenv ###
+.env
 
 ### Git ###
 # Created by git for backups. To disable backups in Git:
@@ -125,7 +128,6 @@ web_modules/
 .yarn-integrity
 
 # dotenv environment variable files
-.env
 .env.development.local
 .env.test.local
 .env.production.local
@@ -815,7 +817,7 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 
-# End of https://www.toptal.com/developers/gitignore/api/vuejs,vue,vs,visualstudiocode,visualstudio,vim,textmate,osx,node,macos,git
+# End of https://www.toptal.com/developers/gitignore/api/vuejs,vue,vs,visualstudiocode,visualstudio,vim,textmate,osx,node,macos,git,dotenv
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
 
