@@ -24,9 +24,11 @@ ignoreWords:
   - JSPCA's
   - lintstagedrc
   - lionels
+  - lionelslegacyjersey
   - Lucida
   - Mansalva
   - mktemp
+  - predeploy
   - realpath
   - substr
   - svgrepo

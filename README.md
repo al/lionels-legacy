@@ -52,6 +52,20 @@ pnpm preview
 
 Be sure to run `pnpm build` first.
 
+### Deploy (to [Github Pages](https://pages.github.com/))
+
+Push to `main` branch to trigger a deployment to Github Pages via a [Github Action/workflow](.github/workflows/deploy.yml):
+
+```sh
+git push origin main
+```
+
+To deploy manually (not recommended):
+
+```sh
+pnpm deploy
+```
+
 ### Lint with [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/)
 
 ```sh

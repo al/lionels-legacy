@@ -25,6 +25,7 @@
     "eslint-plugin-vue": "^9.23.0",
     "eslint-plugin-yml": "^1.14.0",
     "globals": "^15.8.0",
+    "gh-pages": "^6.1.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "postcss": "^8.4.38",
@@ -46,6 +47,7 @@
   "private": true,
   "scripts": {
     "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "format": "prettier --check --ignore-unknown .",
     "format:fix": "prettier --ignore-unknown --write .",
@@ -55,6 +57,7 @@
     "lint:js:fix": "eslint --fix .",
     "lint": "pnpm run lint:js .; pnpm run lint:css",
     "lint:fix": "pnpm run lint:js:fix .; pnpm run lint:css:fix",
+    "predeploy": "pnpm build",
     "prepare": "husky",
     "preview": "vite preview",
     "spelling": "cspell .",
