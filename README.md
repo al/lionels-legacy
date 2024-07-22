@@ -22,6 +22,26 @@ Install Node dependencies, including the requisite version of Node if necessary 
 pnpm install
 ```
 
+### Compile and Start a Development Server with Hot-Reloading
+
+```sh
+pnpm dev
+```
+
+### Compile and Minify for Production
+
+```sh
+pnpm build
+```
+
+### Locally Preview Latest Production Build
+
+```sh
+pnpm preview
+```
+
+Be sure to run `pnpm build` first.
+
 ### Lint with [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/)
 
 ```sh

@@ -3,6 +3,7 @@ import eslint from '@eslint/js'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import eslintPluginJson from 'eslint-plugin-json'
 import eslintPluginMarkdown from 'eslint-plugin-markdown'
+import eslintPluginVue from 'eslint-plugin-vue'
 import eslintPluginYaml from 'eslint-plugin-yml'
 import globals from 'globals'
 import path from 'node:path'
@@ -34,10 +35,12 @@ export default [
       ecmaVersion: 'latest',
       globals: {
         ...globals.browser,
+        ...globals.node,
       },
     },
   },
   eslint.configs.recommended,
+  ...eslintPluginVue.configs['flat/recommended'],
   eslintConfigPrettier,
   eslintPluginJson.configs['recommended'],
   ...eslintPluginYaml.configs['flat/recommended'],

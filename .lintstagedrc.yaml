@@ -2,8 +2,8 @@
   - pnpm exec cspell --no-must-find-files --files
   - pnpm exec prettier --check --ignore-unknown
 
-'*.{cjs,js,json,jsx,md,mjs,ts,tsx,yaml,yml}':
+'*.{cjs,js,json,jsx,md,mjs,ts,tsx,vue,yaml,yml}':
   - pnpm exec eslint --no-warn-ignored
 
-'*.{css,scss}':
+'*.{css,scss,vue}':
   - pnpm exec stylelint
