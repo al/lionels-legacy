@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import PageLayout from '../components/Layout/PageLayout.vue'
 import HomePage from '../views/HomePage.vue'
+import NotFound from '../views/NotFound.vue'
 
 const routes = [
   {
@@ -14,6 +15,7 @@ const routes = [
     component: PageLayout,
     path: '/',
   },
+  { path: '/:pathMatch(.*)*', component: NotFound },
 ]
 
 const scrollBehavior = function (to, _from, savedPosition) {
@@ -46,6 +48,16 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
   scrollBehavior,
+})
+
+router.beforeEach((to, from, next) => {
+  const redirectPath = sessionStorage.getItem('redirectPath')
+  if (redirectPath) {
+    sessionStorage.removeItem('redirectPath')
+    next(redirectPath)
+  } else {
+    next()
+  }
 })
 
 export default router

@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  <head lang="en">
+    <script type="text/javascript">
+      var fullPath = window.location.pathname + window.location.search + window.location.hash
+      sessionStorage.setItem('redirectPath', fullPath)
+      window.location.replace('/')
+    </script>
+  </head>
+  <body></body>
+</html>
