@@ -1,3 +1,4 @@
+import UnheadVite from '@unhead/addons/vite'
 import vue from '@vitejs/plugin-vue'
 import dotenv from 'dotenv'
 import { fileURLToPath, URL } from 'node:url'
@@ -16,7 +17,7 @@ for (const key in process.env) {
 export default defineConfig({
   base: '/',
   define: envVariables,
-  plugins: [vue(), vueDevTools()],
+  plugins: [UnheadVite(), vue(), vueDevTools()],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),

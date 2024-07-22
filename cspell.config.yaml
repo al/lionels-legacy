@@ -32,6 +32,8 @@ ignoreWords:
   - realpath
   - substr
   - svgrepo
+  - Unhead
+  - unhead
   - vueuse
   - webform
 import: []
