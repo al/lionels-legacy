@@ -1,10 +1,6 @@
 updates:
   - directory: /
-    ignore: []
     package-ecosystem: npm
-    registries:
-      - type: npm
-        url: https://registry.npmjs.org
     schedule:
       interval: weekly
   - directory: /
