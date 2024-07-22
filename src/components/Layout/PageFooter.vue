@@ -96,6 +96,14 @@
             </ul>
           </div>
         </div>
+        <div class="mt-10 w-full justify-self-end md:mt-0 lg:col-span-2">
+          <span
+            id="stay-in-touch"
+            class="scroll-mt-[80px] text-base font-medium tracking-wide text-gray-300"
+            >Subscribe for updates</span
+          >
+          <MailerLite :captcha="false" />
+        </div>
       </div>
       <div class="flex flex-col justify-between border-t border-gray-800 pb-10 pt-5 sm:flex-row">
         <p class="text-sm text-gray-500">
@@ -152,4 +160,6 @@
   </footer>
 </template>
 
-<script setup></script>
+<script setup>
+import MailerLite from '../MailerLite.vue'
+</script>
