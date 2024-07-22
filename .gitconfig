@@ -1,0 +1,13 @@
+# Store any shared Git configuration here.
+#
+# IMPORTANT
+#
+# In order to activate this file you must explicitly register it with Git. This
+# only needs to be done once.
+#
+#   git config --local include.path ../.gitconfig
+#
+[commit]
+  template = .gitmessage
+[core]
+  excludesfile = .gitignore.local

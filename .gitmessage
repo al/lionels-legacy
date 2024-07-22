@@ -1,0 +1,30 @@
+# <type>[optional scope]: <description>
+#
+# [optional body]
+#
+# [optional footer(s)]
+
+# 50 characters ---------------------------------|
+# 72 characters -------------------------------------------------------|
+
+# Follow the Conventional Commits specification, conventionalcommits.org
+# See commitlintrc.yaml for specifics.
+#
+# Other guidelines to observe include:
+#
+# 1. Prefer the present tense, imperative mood, e.g. "Change the default
+#    value to 10" rather than "This changes the default value to 10" or
+#    "Changed the default value to 10" or "Changes the default value to
+#    10".
+# 2. Limit the title/summary to 50 characters. Use sentence-case. Do not
+#    end with a period.
+# 3. Wrap all other lines at 72 characters.
+# 4. Use asterisks or hyphens to create lists.
+# 5. Indent code blocks by 4 spaces. Wrap inline code examples with
+#    backticks.
+# 6. Clearly highlight important information like breaking changes, the
+#    need to alter the database, the risk of destroying data, etc. in a
+#    list section marked "**IMPORTANT**". Make use of lists.
+# 7. Reference all related issues/tickets/PRs in the footer. Use
+#    keywords like "Fixes", "Resolves", "Closes", and "Related".
+#
