@@ -13,6 +13,7 @@ ignorePaths:
 ignoreWords:
   - anticsrf
   - argjson
+  - creativecommons
   - elif
   - esac
   - fontawesome
@@ -30,11 +31,13 @@ ignoreWords:
   - mktemp
   - predeploy
   - realpath
+  - sublicensable
   - substr
   - svgrepo
   - Unhead
   - unhead
   - vueuse
+  - waivable
   - webform
 import: []
 version: 0.2
