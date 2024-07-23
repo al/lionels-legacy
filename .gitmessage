@@ -8,6 +8,24 @@
 # 72 characters -------------------------------------------------------|
 
 # Follow the Conventional Commits specification, conventionalcommits.org
+#
+# Valid commit <types> are:
+#
+# - ci       Changes to CI configuration files and scripts.
+# - core     Changes build processes, tooling, dependencies or general
+#            project structure.
+# - doc      Adds or alters documentation.
+# - feat     Adds a new feature.
+# - fix      Solves a bug.
+# - perf     Improves performance.
+# - refactor Rewrites code without feature, performance or bug related
+#            changes.
+# - revert   Changes that reverting other changes.
+# - style    Improves formatting, white-space, etc.
+# - test     Adds or modifies tests.
+# - wip      Work in progress (temporary commits, which will eventually
+#            be rebased or otherwise removed).
+#
 # See commitlintrc.yaml for specifics.
 #
 # Other guidelines to observe include:
