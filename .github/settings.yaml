@@ -1,43 +1,127 @@
+# See https://probot.github.io/apps/settings/
+#
+
+branches:
+  - name: main
+    # NOTE: https://docs.github.com/en/rest/reference/repos#update-branch-protection
+    #
+    #       Branch Protection settings. Set to null to disable.
+    #
+    protection:
+      # Required. Enforce all configured restrictions for administrators. Set to true to enforce
+      # required status checks for repository administrators. Set to null to disable.
+      #
+      enforce_admins: true
+      # Prevent merge commits from being pushed to matching branches.
+      #
+      required_linear_history: false
+      # Required. Require at least one approving review on a pull request, before merging. Set to
+      # null to disable.
+      #
+      required_pull_request_reviews: null
+      # Required. Require status checks to pass before merging. Set to null to disable.
+      #
+      required_status_checks: null
+      # Required. Restrict who can push to this branch. Team and user restrictions are only
+      # available for organization-owned repositories. Set to null to disable.
+      #
+      restrictions: null
+
+# NOTE: `permission` is only valid on organisation-owned repositories.
+#
+#       The permission to grant the collaborator. Can be one of:
+#
+#         - `admin`    Can pull, push and administer this repository.
+#         - `maintain` Recommended for project managers who need to manage the repository without
+#                      access to sensitive or destructive actions.
+#         - `pull`     Can pull, but not push to or administer this repository.
+#         - `push`     Can pull and push, but not administer this repository.
+#         - `triage`   Recommended for contributors who need to proactively manage issues and pull
+#                      requests without write access.
+#
+# collaborators:
+#   - permission:
+#     username:
+
 labels:
   - color: D73A4A
-    name: bug
     description: Something isn't working
+    name: bug
   - color: 0366D6
-    name: dependencies
     description: Pull requests or issues that related to dependencies
+    name: dependencies
   - color: 0075CA
-    name: documentation
     description: Improvements or additions to documentation
+    name: documentation
   - color: CFD3D7
-    name: duplicate
     description: This issue or pull request already exists
+    name: duplicate
   - color: A2EEEF
-    name: enhancement
     description: Improvements or additions to an existing feature
+    name: enhancement
   - color: 0E8A16
-    name: feature
     description: New feature or request
+    name: feature
   - color: 000000
-    name: github_actions
     description: Pull requests that update GitHub Actions code
+    name: github_actions
   - color: E99695
-    name: help wanted
     description: Extra attention is needed
+    name: help wanted
   - color: FFFFFF
-    name: invalid
     description: This doesn't seem right
+    name: invalid
   - color: D876E3
-    name: question
     description: Information or discussion requested
+    name: question
   - color: B60205
-    name: security
     description: Security related fixes, enhancements, or improvements
+    name: security
   - color: 7057FF
-    name: test
     description: Test related fixes, enhancements, or improvements
+    name: test
   - color: FBCA04
-    name: wip
     description: Work in progress
+    name: wip
   - color: FFFFFF
-    name: wontfix
     description: This will not be worked on
+    name: wontfix
+
+# milestones:
+#   - description:
+#     state:
+#     title:repository:
+
+repository:
+  allow_merge_commit: true
+  allow_rebase_merge: true
+  allow_squash_merge: true
+  default_branch: main
+  delete_branch_on_merge: true
+  description: Source code for Lionel's Legacy Jersey
+  enable_automated_security_fixes: true
+  enable_vulnerability_alerts: true
+  has_downloads: true
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  homepage: https://lionelslegacyjersey.com/
+  name: lionels-legacy
+  private: false
+  topics: []
+# NOTE: See https://docs.github.com/en/rest/reference/teams#add-or-update-team-repository-permissions
+#       for available options.
+#
+#       The permission to grant the team. Can be one of:
+#
+#       - `admin`    Can pull, push and administer this repository.
+#       - `maintain` Recommended for project managers who need to manage the repository without
+#                    access to sensitive or destructive actions.
+#       - `pull`     Can pull, but not push to or administer this repository.
+#       - `push`     Can pull and push, but not administer this repository.
+#       - `triage`   Recommended for contributors who need to proactively manage issues and pull
+#                    requests without write access.
+#
+# teams:
+#   - name:
+#     permission:
