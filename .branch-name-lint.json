@@ -1,0 +1,40 @@
+{
+  "branchNameLinter": {
+    "banned": ["bak", "tmp", "wip"],
+    "disallowed": ["develop", "gh-pages", "main", "master", "staging"],
+    "msgBranchBanned": "Branches with the name \"%s\" are not allowed.",
+    "msgBranchDisallowed": "Pushing to \"%s\" is not allowed, use git-flow.",
+    "msgDoesNotMatchRegex": "Branch \"%s\" does not conform to the naming pattern: \"%s\"",
+    "msgPrefixNotAllowed": "Branch prefix \"%s\" is not allowed.",
+    "msgPrefixSuggestion": "Instead of \"%s\" try \"%s\".",
+    "msgseparatorRequired": "Branch name \"%s\" must contain a separator \"%s\".",
+    "prefixes": [
+      "chore",
+      "ci",
+      "core",
+      "doc",
+      "experiment",
+      "feat",
+      "fix",
+      "hotfix",
+      "release",
+      "test"
+    ],
+    "regex": "^[a-z]+/[a-z][a-z0-9.-]*$",
+    "regexOptions": "i",
+    "separator": "/",
+    "skip": [],
+    "suggestions": {
+      "backup": "bak",
+      "build": "ci",
+      "docs": "doc",
+      "feat": "feature",
+      "features": "feature",
+      "releases": "release",
+      "spec": "test",
+      "temp": "tmp",
+      "tests": "test",
+      "wip": "experiment"
+    }
+  }
+}
