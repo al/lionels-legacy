@@ -114,5 +114,6 @@ pnpm spelling:fix
 ### Other Notable Tools
 
 - Git hooks are managed by [Husky](https://typicode.github.io/husky/).
-- Commit message linting is provided by [commitlint](https://github.com/conventional-changelog/commitlint?tab=readme-ov-file). Messages should conform to the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification.
+- Commit message linting is provided by [commitlint](https://github.com/conventional-changelog/commitlint?tab=readme-ov-file). Messages should conform to the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification. See [.commitlintrc.yaml](.commitlintrc.yaml) for details.
+- Git branch name linting is provided by [branch-name-lint](https://github.com/barzik/branch-name-lint) (actually we use [a fork](https://github.com/al/branch-name-lint/tree/integration/error-handling-issues) that we currently maintain). See [.branch-name-lint.json](.branch-name-lint.json) for details.
 - [lint-staged](https://github.com/lint-staged/lint-staged) ensures that pre-commit checks (linting, formatting, and spell checking) are only run on staged files.
