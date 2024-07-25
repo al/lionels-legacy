@@ -50,7 +50,7 @@ const router = createRouter({
   scrollBehavior,
 })
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((_to, _from, next) => {
   const redirectPath = sessionStorage.getItem('redirectPath')
   if (redirectPath) {
     sessionStorage.removeItem('redirectPath')

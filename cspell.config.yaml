@@ -13,6 +13,7 @@ ignorePaths:
 ignoreWords:
   - anticsrf
   - argjson
+  - commitlintrc
   - creativecommons
   - elif
   - esac
@@ -23,7 +24,6 @@ ignoreWords:
   - inputmask
   - JSPCA
   - JSPCA's
-  - lintstagedrc
   - lionels
   - lionelslegacyjersey
   - Lucida
