@@ -1,6 +1,6 @@
 import UnheadVite from '@unhead/addons/vite'
 import vue from '@vitejs/plugin-vue'
-import dotenv from 'dotenv'
+import dotenv from 'dotenv-flow'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
