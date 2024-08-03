@@ -4,7 +4,13 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      ref:
+        default: main
+        description: 'Branch, tag or commit SHA1 to build'
+        required: true
+        type: string
 
 jobs:
   build-and-deploy:
@@ -16,6 +22,8 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref }}
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4.0.0
