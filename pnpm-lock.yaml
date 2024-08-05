@@ -115,17 +115,17 @@ importers:
         specifier: ^0.6.5
         version: 0.6.5(prettier-plugin-organize-attributes@1.0.0(prettier@3.3.3))(prettier-plugin-organize-imports@4.0.0(prettier@3.3.3)(typescript@5.4.5)(vue-tsc@2.0.28(typescript@5.4.5)))(prettier@3.3.3)
       stylelint:
-        specifier: ^16.8.0
-        version: 16.8.0(typescript@5.4.5)
+        specifier: ^16.8.1
+        version: 16.8.1(typescript@5.4.5)
       stylelint-config-recommended-vue:
         specifier: ^1.5.0
-        version: 1.5.0(postcss-html@1.7.0)(stylelint@16.8.0(typescript@5.4.5))
+        version: 1.5.0(postcss-html@1.7.0)(stylelint@16.8.1(typescript@5.4.5))
       stylelint-config-standard:
         specifier: ^36.0.1
-        version: 36.0.1(stylelint@16.8.0(typescript@5.4.5))
+        version: 36.0.1(stylelint@16.8.1(typescript@5.4.5))
       stylelint-config-tailwindcss:
         specifier: ^0.0.7
-        version: 0.0.7(stylelint@16.8.0(typescript@5.4.5))(tailwindcss@3.4.7)
+        version: 0.0.7(stylelint@16.8.1(typescript@5.4.5))(tailwindcss@3.4.7)
       tailwindcss:
         specifier: ^3.4.7
         version: 3.4.7
@@ -2869,8 +2869,8 @@ packages:
       stylelint: '>=13.13.1'
       tailwindcss: '>=2.2.16'
 
-  stylelint@16.8.0:
-    resolution: {integrity: sha512-Jjr40w3PXDiJVW6c9swLM0a1e0DgDm/XkFozc4XgAcREFas+/nchzmDmeVxazbzXgpDrwm+cW6W6iGtZqYUh+g==}
+  stylelint@16.8.1:
+    resolution: {integrity: sha512-O8aDyfdODSDNz/B3gW2HQ+8kv8pfhSu7ZR7xskQ93+vI6FhKKGUJMQ03Ydu+w3OvXXE0/u4hWU4hCPNOyld+OA==}
     engines: {node: '>=18.12.0'}
     hasBin: true
 
@@ -3254,7 +3254,7 @@ snapshots:
       '@babel/traverse': 7.24.8
       '@babel/types': 7.24.9
       convert-source-map: 2.0.0
-      debug: 4.3.5
+      debug: 4.3.6
       gensync: 1.0.0-beta.2
       json5: 2.2.3
       semver: 6.3.1
@@ -3452,7 +3452,7 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.24.7
       '@babel/parser': 7.24.8
       '@babel/types': 7.24.9
-      debug: 4.3.5
+      debug: 4.3.6
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -3857,7 +3857,7 @@ snapshots:
   '@eslint/eslintrc@2.1.4':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.5
+      debug: 4.3.6
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.1
@@ -3891,7 +3891,7 @@ snapshots:
   '@humanwhocodes/config-array@0.11.14':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.5
+      debug: 4.3.6
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -4793,7 +4793,7 @@ snapshots:
   eslint-plugin-stylelint@0.1.1(eslint@8.57.0)(typescript@5.4.5):
     dependencies:
       eslint: 8.57.0
-      stylelint: 16.8.0(typescript@5.4.5)
+      stylelint: 16.8.1(typescript@5.4.5)
       synckit: 0.9.1
     transitivePeerDependencies:
       - supports-color
@@ -5428,7 +5428,7 @@ snapshots:
 
   micromark@2.11.4:
     dependencies:
-      debug: 4.3.5
+      debug: 4.3.6
       parse-entities: 2.0.0
     transitivePeerDependencies:
       - supports-color
@@ -5923,34 +5923,34 @@ snapshots:
     dependencies:
       escape-string-regexp: 1.0.5
 
-  stylelint-config-html@1.1.0(postcss-html@1.7.0)(stylelint@16.8.0(typescript@5.4.5)):
+  stylelint-config-html@1.1.0(postcss-html@1.7.0)(stylelint@16.8.1(typescript@5.4.5)):
     dependencies:
       postcss-html: 1.7.0
-      stylelint: 16.8.0(typescript@5.4.5)
+      stylelint: 16.8.1(typescript@5.4.5)
 
-  stylelint-config-recommended-vue@1.5.0(postcss-html@1.7.0)(stylelint@16.8.0(typescript@5.4.5)):
+  stylelint-config-recommended-vue@1.5.0(postcss-html@1.7.0)(stylelint@16.8.1(typescript@5.4.5)):
     dependencies:
       postcss-html: 1.7.0
       semver: 7.6.2
-      stylelint: 16.8.0(typescript@5.4.5)
-      stylelint-config-html: 1.1.0(postcss-html@1.7.0)(stylelint@16.8.0(typescript@5.4.5))
-      stylelint-config-recommended: 14.0.1(stylelint@16.8.0(typescript@5.4.5))
+      stylelint: 16.8.1(typescript@5.4.5)
+      stylelint-config-html: 1.1.0(postcss-html@1.7.0)(stylelint@16.8.1(typescript@5.4.5))
+      stylelint-config-recommended: 14.0.1(stylelint@16.8.1(typescript@5.4.5))
 
-  stylelint-config-recommended@14.0.1(stylelint@16.8.0(typescript@5.4.5)):
+  stylelint-config-recommended@14.0.1(stylelint@16.8.1(typescript@5.4.5)):
     dependencies:
-      stylelint: 16.8.0(typescript@5.4.5)
+      stylelint: 16.8.1(typescript@5.4.5)
 
-  stylelint-config-standard@36.0.1(stylelint@16.8.0(typescript@5.4.5)):
+  stylelint-config-standard@36.0.1(stylelint@16.8.1(typescript@5.4.5)):
     dependencies:
-      stylelint: 16.8.0(typescript@5.4.5)
-      stylelint-config-recommended: 14.0.1(stylelint@16.8.0(typescript@5.4.5))
+      stylelint: 16.8.1(typescript@5.4.5)
+      stylelint-config-recommended: 14.0.1(stylelint@16.8.1(typescript@5.4.5))
 
-  stylelint-config-tailwindcss@0.0.7(stylelint@16.8.0(typescript@5.4.5))(tailwindcss@3.4.7):
+  stylelint-config-tailwindcss@0.0.7(stylelint@16.8.1(typescript@5.4.5))(tailwindcss@3.4.7):
     dependencies:
-      stylelint: 16.8.0(typescript@5.4.5)
+      stylelint: 16.8.1(typescript@5.4.5)
       tailwindcss: 3.4.7
 
-  stylelint@16.8.0(typescript@5.4.5):
+  stylelint@16.8.1(typescript@5.4.5):
     dependencies:
       '@csstools/css-parser-algorithms': 2.7.1(@csstools/css-tokenizer@2.4.1)
       '@csstools/css-tokenizer': 2.4.1
@@ -6175,7 +6175,7 @@ snapshots:
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.0(rollup@4.18.1)
-      debug: 4.3.5
+      debug: 4.3.6
       error-stack-parser-es: 0.1.5
       fs-extra: 11.2.0
       open: 10.1.0
@@ -6249,7 +6249,7 @@ snapshots:
 
   vue-eslint-parser@9.4.3(eslint@8.57.0):
     dependencies:
-      debug: 4.3.5
+      debug: 4.3.6
       eslint: 8.57.0
       eslint-scope: 7.2.2
       eslint-visitor-keys: 3.4.3
