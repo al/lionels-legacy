@@ -58,8 +58,8 @@ importers:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.40)
       branch-name-lint:
-        specifier: al/branch-name-lint#integration/error-handling-issues
-        version: git+https://git@github.com:al/branch-name-lint.git#22abe8e719ea3aec03b709e94068aa7a880e7a59
+        specifier: git+https://github.com/al/branch-name-lint.git#integration/error-handling-issues
+        version: https://codeload.github.com/al/branch-name-lint/tar.gz/22abe8e719ea3aec03b709e94068aa7a880e7a59
       cspell:
         specifier: ^8.12.1
         version: 8.12.1
@@ -1216,8 +1216,8 @@ packages:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
 
-  branch-name-lint@git+https://git@github.com:al/branch-name-lint.git#22abe8e719ea3aec03b709e94068aa7a880e7a59:
-    resolution: {commit: 22abe8e719ea3aec03b709e94068aa7a880e7a59, repo: git@github.com:al/branch-name-lint.git, type: git}
+  branch-name-lint@https://codeload.github.com/al/branch-name-lint/tar.gz/22abe8e719ea3aec03b709e94068aa7a880e7a59:
+    resolution: {tarball: https://codeload.github.com/al/branch-name-lint/tar.gz/22abe8e719ea3aec03b709e94068aa7a880e7a59}
     version: 2.1.1
     engines: {node: '>=10'}
     hasBin: true
@@ -4358,7 +4358,7 @@ snapshots:
     dependencies:
       fill-range: 7.1.1
 
-  branch-name-lint@git+https://git@github.com:al/branch-name-lint.git#22abe8e719ea3aec03b709e94068aa7a880e7a59:
+  branch-name-lint@https://codeload.github.com/al/branch-name-lint/tar.gz/22abe8e719ea3aec03b709e94068aa7a880e7a59:
     dependencies:
       find-up: 5.0.0
       meow: 9.0.0
