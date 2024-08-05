@@ -17,7 +17,7 @@
     "@unhead/addons": "^1.9.14",
     "@vitejs/plugin-vue": "^5.1.1",
     "@vue/eslint-config-prettier": "^9.0.0",
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "branch-name-lint": "git+https://github.com/al/branch-name-lint.git#integration/error-handling-issues",
     "cspell": "^8.13.1",
     "eslint": "^8.57.0",
