@@ -50,7 +50,7 @@ importers:
         version: 1.9.16(rollup@4.18.1)
       '@vitejs/plugin-vue':
         specifier: ^5.1.1
-        version: 5.1.1(vite@5.3.4(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))
+        version: 5.1.1(vite@5.3.5(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))
       '@vue/eslint-config-prettier':
         specifier: ^9.0.0
         version: 9.0.0(@types/eslint@8.56.10)(eslint@8.57.0)(prettier@3.3.3)
@@ -59,7 +59,7 @@ importers:
         version: 10.4.19(postcss@8.4.40)
       branch-name-lint:
         specifier: git+https://github.com/al/branch-name-lint.git#integration/error-handling-issues
-        version: https://codeload.github.com/al/branch-name-lint/tar.gz/22abe8e719ea3aec03b709e94068aa7a880e7a59
+        version: git+https://git@github.com:al/branch-name-lint.git#22abe8e719ea3aec03b709e94068aa7a880e7a59
       cspell:
         specifier: ^8.12.1
         version: 8.12.1
@@ -130,11 +130,11 @@ importers:
         specifier: ^3.4.7
         version: 3.4.7
       vite:
-        specifier: ^5.3.1
-        version: 5.3.4(@types/node@20.14.2)
+        specifier: ^5.3.5
+        version: 5.3.5(@types/node@20.14.2)
       vite-plugin-vue-devtools:
         specifier: ^7.3.1
-        version: 7.3.6(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))
+        version: 7.3.6(rollup@4.18.1)(vite@5.3.5(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))
       vue-tsc:
         specifier: ^2.0.28
         version: 2.0.28(typescript@5.4.5)
@@ -1216,8 +1216,8 @@ packages:
     resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
     engines: {node: '>=8'}
 
-  branch-name-lint@https://codeload.github.com/al/branch-name-lint/tar.gz/22abe8e719ea3aec03b709e94068aa7a880e7a59:
-    resolution: {tarball: https://codeload.github.com/al/branch-name-lint/tar.gz/22abe8e719ea3aec03b709e94068aa7a880e7a59}
+  branch-name-lint@git+https://git@github.com:al/branch-name-lint.git#22abe8e719ea3aec03b709e94068aa7a880e7a59:
+    resolution: {commit: 22abe8e719ea3aec03b709e94068aa7a880e7a59, repo: git@github.com:al/branch-name-lint.git, type: git}
     version: 2.1.1
     engines: {node: '>=10'}
     hasBin: true
@@ -3052,8 +3052,8 @@ packages:
     peerDependencies:
       vite: ^3.0.0-0 || ^4.0.0-0 || ^5.0.0-0
 
-  vite@5.3.4:
-    resolution: {integrity: sha512-Cw+7zL3ZG9/NZBB8C+8QbQZmR54GwqIz+WMI4b3JgdYJvX+ny9AjJXqkGQlDXSXRP9rP0B4tbciRMOVEKulVOA==}
+  vite@5.3.5:
+    resolution: {integrity: sha512-MdjglKR6AQXQb9JGiS7Rc2wC6uMjcm7Go/NHNO63EwiJXfuk9PgqiP/n5IDJCziMkfw9n4Ubp7lttNwz+8ZVKA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -4081,9 +4081,9 @@ snapshots:
       unhead: 1.9.16
       vue: 3.4.33(typescript@5.4.5)
 
-  '@vitejs/plugin-vue@5.1.1(vite@5.3.4(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))':
+  '@vitejs/plugin-vue@5.1.1(vite@5.3.5(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))':
     dependencies:
-      vite: 5.3.4(@types/node@20.14.2)
+      vite: 5.3.5(@types/node@20.14.2)
       vue: 3.4.33(typescript@5.4.5)
 
   '@volar/language-core@2.4.0-alpha.18':
@@ -4159,14 +4159,14 @@ snapshots:
 
   '@vue/devtools-api@6.6.3': {}
 
-  '@vue/devtools-core@7.3.6(vite@5.3.4(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))':
+  '@vue/devtools-core@7.3.6(vite@5.3.5(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))':
     dependencies:
       '@vue/devtools-kit': 7.3.6
       '@vue/devtools-shared': 7.3.6
       mitt: 3.0.1
       nanoid: 3.3.7
       pathe: 1.1.2
-      vite-hot-client: 0.2.3(vite@5.3.4(@types/node@20.14.2))
+      vite-hot-client: 0.2.3(vite@5.3.5(@types/node@20.14.2))
       vue: 3.4.33(typescript@5.4.5)
     transitivePeerDependencies:
       - vite
@@ -4358,7 +4358,7 @@ snapshots:
     dependencies:
       fill-range: 7.1.1
 
-  branch-name-lint@https://codeload.github.com/al/branch-name-lint/tar.gz/22abe8e719ea3aec03b709e94068aa7a880e7a59:
+  branch-name-lint@git+https://git@github.com:al/branch-name-lint.git#22abe8e719ea3aec03b709e94068aa7a880e7a59:
     dependencies:
       find-up: 5.0.0
       meow: 9.0.0
@@ -6167,11 +6167,11 @@ snapshots:
       spdx-correct: 3.2.0
       spdx-expression-parse: 3.0.1
 
-  vite-hot-client@0.2.3(vite@5.3.4(@types/node@20.14.2)):
+  vite-hot-client@0.2.3(vite@5.3.5(@types/node@20.14.2)):
     dependencies:
-      vite: 5.3.4(@types/node@20.14.2)
+      vite: 5.3.5(@types/node@20.14.2)
 
-  vite-plugin-inspect@0.8.5(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.2)):
+  vite-plugin-inspect@0.8.5(rollup@4.18.1)(vite@5.3.5(@types/node@20.14.2)):
     dependencies:
       '@antfu/utils': 0.7.10
       '@rollup/pluginutils': 5.1.0(rollup@4.18.1)
@@ -6182,28 +6182,28 @@ snapshots:
       perfect-debounce: 1.0.0
       picocolors: 1.0.1
       sirv: 2.0.4
-      vite: 5.3.4(@types/node@20.14.2)
+      vite: 5.3.5(@types/node@20.14.2)
     transitivePeerDependencies:
       - rollup
       - supports-color
 
-  vite-plugin-vue-devtools@7.3.6(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5)):
+  vite-plugin-vue-devtools@7.3.6(rollup@4.18.1)(vite@5.3.5(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5)):
     dependencies:
-      '@vue/devtools-core': 7.3.6(vite@5.3.4(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))
+      '@vue/devtools-core': 7.3.6(vite@5.3.5(@types/node@20.14.2))(vue@3.4.33(typescript@5.4.5))
       '@vue/devtools-kit': 7.3.6
       '@vue/devtools-shared': 7.3.6
       execa: 8.0.1
       sirv: 2.0.4
-      vite: 5.3.4(@types/node@20.14.2)
-      vite-plugin-inspect: 0.8.5(rollup@4.18.1)(vite@5.3.4(@types/node@20.14.2))
-      vite-plugin-vue-inspector: 5.1.2(vite@5.3.4(@types/node@20.14.2))
+      vite: 5.3.5(@types/node@20.14.2)
+      vite-plugin-inspect: 0.8.5(rollup@4.18.1)(vite@5.3.5(@types/node@20.14.2))
+      vite-plugin-vue-inspector: 5.1.2(vite@5.3.5(@types/node@20.14.2))
     transitivePeerDependencies:
       - '@nuxt/kit'
       - rollup
       - supports-color
       - vue
 
-  vite-plugin-vue-inspector@5.1.2(vite@5.3.4(@types/node@20.14.2)):
+  vite-plugin-vue-inspector@5.1.2(vite@5.3.5(@types/node@20.14.2)):
     dependencies:
       '@babel/core': 7.24.9
       '@babel/plugin-proposal-decorators': 7.24.7(@babel/core@7.24.9)
@@ -6214,11 +6214,11 @@ snapshots:
       '@vue/compiler-dom': 3.4.33
       kolorist: 1.8.0
       magic-string: 0.30.10
-      vite: 5.3.4(@types/node@20.14.2)
+      vite: 5.3.5(@types/node@20.14.2)
     transitivePeerDependencies:
       - supports-color
 
-  vite@5.3.4(@types/node@20.14.2):
+  vite@5.3.5(@types/node@20.14.2):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.40
