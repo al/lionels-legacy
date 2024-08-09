@@ -4,7 +4,7 @@
     class="relative mt-6 px-4 md:px-24 lg:px-8"
   >
     <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8">
-      <div class="flex flex-col overflow-x-hidden sm:overflow-x-visible lg:flex-row-reverse">
+      <div class="flex flex-col overflow-x-hidden sm:overflow-x-visible lg:flex-row">
         <div class="mb-10 w-full flex-1">
           <img
             class="h-full w-full bg-left object-cover lg:hidden"
@@ -71,15 +71,15 @@
 @media screen(lg) {
   #speed-matters-container {
     background: linear-gradient(
-        to left,
+        to right,
         rgba(250 250 250 / 0%) 5%,
         rgba(250 250 250 / 100%) 50%,
         rgba(255 255 255 / 100%) 100%
       ),
-      linear-gradient(to left, rgba(0 0 0 / 0%) 0, rgba(0 0 0 / 50%) 50%),
+      linear-gradient(to right, rgba(0 0 0 / 50%) 50%, rgba(0 0 0 / 0%) 100%),
       url('@/assets/images/greenlane.jpg');
-    background-position: right;
-    background-size: cover;
+    background-position: left;
+    background-size: auto 100%;
   }
 }
 </style>
