@@ -44,7 +44,7 @@ importers:
         version: 1.1.1
       '@tailwindcss/forms':
         specifier: ^0.5.7
-        version: 0.5.7(tailwindcss@3.4.8)
+        version: 0.5.7(tailwindcss@3.4.9)
       '@unhead/addons':
         specifier: ^1.9.14
         version: 1.9.16(rollup@4.20.0)
@@ -125,10 +125,10 @@ importers:
         version: 36.0.1(stylelint@16.8.1(typescript@5.5.4))
       stylelint-config-tailwindcss:
         specifier: ^0.0.7
-        version: 0.0.7(stylelint@16.8.1(typescript@5.5.4))(tailwindcss@3.4.8)
+        version: 0.0.7(stylelint@16.8.1(typescript@5.5.4))(tailwindcss@3.4.9)
       tailwindcss:
-        specifier: ^3.4.7
-        version: 3.4.8
+        specifier: ^3.4.9
+        version: 3.4.9
       vite:
         specifier: ^5.3.5
         version: 5.4.0(@types/node@22.1.0)
@@ -2888,8 +2888,8 @@ packages:
     resolution: {integrity: sha512-w2sfv80nrAh2VCbqR5AK27wswXhqcck2AhfnNW76beQXskGZ1V12GwS//yYVa3d3fcvAip2OUnbDAjW2k3v9fA==}
     engines: {node: '>=10.0.0'}
 
-  tailwindcss@3.4.8:
-    resolution: {integrity: sha512-GkP17r9GQkxgZ9FKHJQEnjJuKBcbFhMFzKu5slmN6NjlCuFnYJMQ8N4AZ6VrUyiRXlDtPKHkesuQ/MS913Nvdg==}
+  tailwindcss@3.4.9:
+    resolution: {integrity: sha512-1SEOvRr6sSdV5IDf9iC+NU4dhwdqzF4zKKq3sAbasUWHEM6lsMhX+eNN5gkPx1BvLFEnZQEUFbXnGj8Qlp83Pg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -3957,10 +3957,10 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.20.0':
     optional: true
 
-  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.8)':
+  '@tailwindcss/forms@0.5.7(tailwindcss@3.4.9)':
     dependencies:
       mini-svg-data-uri: 1.4.4
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.9
 
   '@tanstack/virtual-core@3.8.4': {}
 
@@ -5896,10 +5896,10 @@ snapshots:
       stylelint: 16.8.1(typescript@5.5.4)
       stylelint-config-recommended: 14.0.1(stylelint@16.8.1(typescript@5.5.4))
 
-  stylelint-config-tailwindcss@0.0.7(stylelint@16.8.1(typescript@5.5.4))(tailwindcss@3.4.8):
+  stylelint-config-tailwindcss@0.0.7(stylelint@16.8.1(typescript@5.5.4))(tailwindcss@3.4.9):
     dependencies:
       stylelint: 16.8.1(typescript@5.5.4)
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.9
 
   stylelint@16.8.1(typescript@5.5.4):
     dependencies:
@@ -5990,7 +5990,7 @@ snapshots:
       string-width: 4.2.3
       strip-ansi: 6.0.1
 
-  tailwindcss@3.4.8:
+  tailwindcss@3.4.9:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
