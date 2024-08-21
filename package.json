@@ -6,7 +6,7 @@
     "@unhead/vue": "^1.9.14",
     "@vueuse/core": "^11.0.1",
     "dotenv-flow": "^4.1.0",
-    "vue": "^3.4.37",
+    "vue": "^3.4.38",
     "vue-router": "^4.4.2"
   },
   "devDependencies": {
