@@ -38,7 +38,7 @@ Any environment variable whose name is prefixed with `VITE_` will be exposed to 
 pnpm dev
 ```
 
-### Compile and Minify for Production
+### Compile, Minify and Prerender for Production
 
 ```sh
 pnpm build
@@ -117,3 +117,27 @@ pnpm spelling:fix
 - Commit message linting is provided by [commitlint](https://github.com/conventional-changelog/commitlint?tab=readme-ov-file). Messages should conform to the [Conventional Commit](https://www.conventionalcommits.org/en/v1.0.0/) specification. See [.commitlintrc.yaml](.commitlintrc.yaml) for details.
 - Git branch name linting is provided by [branch-name-lint](https://github.com/barzik/branch-name-lint) (actually we use [a fork](https://github.com/al/branch-name-lint/tree/integration/error-handling-issues) that we currently maintain). See [.branch-name-lint.json](.branch-name-lint.json) for details.
 - [lint-staged](https://github.com/lint-staged/lint-staged) ensures that pre-commit checks (linting, formatting, and spell checking) are only run on staged files.
+
+## Troubleshooting
+
+### `pnpm build` hangs or Chromium segfaults during prerendering on OSX
+
+Page prerendering is provided by [vite-plugin-prerender](https://github.com/Rudeus3Greyrat/vite-plugin-prerender), which itself relies upon [puppeteer](https://github.com/puppeteer/puppeteer/).
+
+[puppeteer](https://github.com/puppeteer/puppeteer/) installs x86 versions of Chromium even when running on Apple Silicon/ARM64 chips.
+
+If necessary run:
+
+```sh
+pnpm node node_modules/puppeteer/install.mjs
+```
+
+This should install a suitable version of Chromium, under ~/.cache/puppeteer/chrome/ by default. Verify that it works by launching it, e.g.
+
+```sh
+open '~/.cache/puppeteer/chrome/mac_arm-126.0.6478.182/chrome-mac-arm64/Google Chrome for Testing.app'
+```
+
+To instruct the build process to use this version of Chromium (or some other one that you have installed manually), set the `PUPPETEER_EXECUTABLE_PATH` variable path.
+
+Use of an environment file is recommended. Remember that even when running locally, the build environment will most likely be set to `production`, so you should create/modify the .env.production.local file.

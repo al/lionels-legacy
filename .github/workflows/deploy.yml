@@ -25,6 +25,11 @@ jobs:
         with:
           ref: ${{ inputs.ref }}
 
+      - name: Install Chromium
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4.0.0
         with:
@@ -32,6 +37,7 @@ jobs:
 
       - name: Build the project
         env:
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium-browser
           VITE_GTM_ID: ${{ secrets.GTM_ID }}
         run: pnpm build
 

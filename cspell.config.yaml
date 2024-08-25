@@ -30,6 +30,10 @@ ignoreWords:
   - Mansalva
   - mktemp
   - predeploy
+  - Prerender
+  - prerender
+  - prerenderer
+  - prerendering
   - realpath
   - sublicensable
   - substr

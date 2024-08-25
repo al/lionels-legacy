@@ -60,4 +60,10 @@ router.beforeEach((_to, _from, next) => {
   }
 })
 
+router.afterEach(() => {
+  setTimeout(() => {
+    document.dispatchEvent(new Event('render-complete'))
+  }, 1000)
+})
+
 export default router
