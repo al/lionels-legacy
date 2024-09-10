@@ -34,7 +34,7 @@
     "globals": "^15.8.0",
     "husky": "^9.1.5",
     "lint-staged": "^15.2.9",
-    "postcss": "^8.4.40",
+    "postcss": "^8.4.45",
     "prettier": "^3.3.2",
     "prettier-plugin-organize-attributes": "^1.0.0",
     "prettier-plugin-organize-imports": "^4.0.0",
