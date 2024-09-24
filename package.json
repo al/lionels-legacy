@@ -22,7 +22,7 @@
     "autoprefixer": "^10.4.20",
     "branch-name-lint": "https://codeload.github.com/al/branch-name-lint/tar.gz/integration/error-handling-issues",
     "cspell": "^8.14.2",
-    "eslint": "^8.57.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-json": "^4.0.0",
     "eslint-plugin-markdown": "^5.1.0",
