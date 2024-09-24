@@ -15,7 +15,7 @@
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.4.1",
     "@eslint/compat": "^1.1.1",
-    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/forms": "^0.5.9",
     "@unhead/addons": "^1.11.1",
     "@vitejs/plugin-vue": "^5.1.1",
     "@vue/eslint-config-prettier": "^9.0.0",
