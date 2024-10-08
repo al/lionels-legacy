@@ -12,6 +12,9 @@
     <p class="my-6 text-base text-gray-700 md:text-lg">
       Failure to do so is punishable by a fine of
       <strong class="text-orange-accent-400">up to £10k</strong>
+      and/or
+      <strong class="text-orange-accent-400">up to 6 months</strong>
+      imprisonment
     </p>
   </div>
 
