@@ -32,7 +32,7 @@
                 <a
                   class="text-gray-500 transition-colors duration-300 hover:text-orange-900"
                   aria-label=""
-                  href="https://jersey.police.uk/advice/road-collisions/"
+                  href="https://www.jersey.police.je/s/advice/road-collisions-MCH2FNSL2YJZGAFMHKQ6YD7NK4HA"
                   >Road Collisions</a
                 >
               </li>
@@ -40,7 +40,7 @@
                 <a
                   class="text-gray-500 transition-colors duration-300 hover:text-orange-900"
                   aria-label=""
-                  href="https://jersey.police.uk/be-safe/road-safety/speed-limits-and-speeding/"
+                  href="https://www.jersey.police.je/s/advice/speed-limits-and-speeding-MCFBPUXF2TRNGETAJ6LFFAQFXDXU"
                   >Speed limits and speeding</a
                 >
               </li>
