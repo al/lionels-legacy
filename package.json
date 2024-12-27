@@ -9,7 +9,7 @@
     "dotenv-flow": "^4.1.0",
     "puppeteer": "^23.5.1",
     "vue": "^3.5.4",
-    "vue-router": "^4.4.2"
+    "vue-router": "^4.5.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
