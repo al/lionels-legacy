@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.4.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "@eslint/compat": "^1.1.1",
     "@tailwindcss/forms": "^0.5.9",
     "@unhead/addons": "^1.11.7",
