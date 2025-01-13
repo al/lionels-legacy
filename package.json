@@ -16,7 +16,7 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/compat": "^1.1.1",
     "@tailwindcss/forms": "^0.5.9",
-    "@unhead/addons": "^1.11.7",
+    "@unhead/addons": "^1.11.16",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/eslint-config-prettier": "^9.0.0",
     "autoprefixer": "^10.4.20",
