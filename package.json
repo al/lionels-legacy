@@ -18,7 +18,7 @@
     "@tailwindcss/forms": "^0.5.9",
     "@unhead/addons": "^1.11.7",
     "@vitejs/plugin-vue": "^5.2.1",
-    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-prettier": "^10.1.0",
     "autoprefixer": "^10.4.20",
     "branch-name-lint": "https://codeload.github.com/al/branch-name-lint/tar.gz/integration/error-handling-issues",
     "cspell": "^8.17.1",
