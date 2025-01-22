@@ -30,7 +30,7 @@
     "eslint-plugin-stylelint": "^0.1.1",
     "eslint-plugin-vue": "^9.23.0",
     "eslint-plugin-yml": "^1.16.0",
-    "gh-pages": "^6.1.1",
+    "gh-pages": "^6.3.0",
     "globals": "^15.14.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.3.0",
