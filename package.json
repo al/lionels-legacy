@@ -21,7 +21,7 @@
     "@vue/eslint-config-prettier": "^10.1.0",
     "autoprefixer": "^10.4.20",
     "branch-name-lint": "https://codeload.github.com/al/branch-name-lint/tar.gz/integration/error-handling-issues",
-    "cspell": "^8.17.1",
+    "cspell": "^8.17.3",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-json": "^4.0.0",
