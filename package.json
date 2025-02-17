@@ -47,7 +47,7 @@
     "vite": "^5.4.12",
     "vite-plugin-prerender": "^1.0.8",
     "vite-plugin-vue-devtools": "^7.7.0",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^2.2.2"
   },
   "name": "lionels-legacy",
   "packageManager": "pnpm@9.3.0",
