@@ -5,7 +5,7 @@
     "@heroicons/vue": "^2.2.0",
     "@prerenderer/renderer-puppeteer": "^1.2.4",
     "@unhead/vue": "^1.11.14",
-    "@vueuse/core": "^12.5.0",
+    "@vueuse/core": "^12.7.0",
     "dotenv-flow": "^4.1.0",
     "puppeteer": "^24.2.1",
     "vue": "^3.5.13",
